@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Anonymously</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Inconsolata:wght@500&family=Patrick+Hand+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="message.css">
+</head>
+
+<body>
+    <div class="primary_body_content">
+        <div class="header">
+            <h2>Talk To Your Mentor/Faculty Anonymously</h2>
+        </div>
+        <div class="main_content">
+            <form action="">
+
+                <div class="blockfrBranch blocks">
+                    <div class="checkbox">
+                        <label for="branch">
+                            <span class="span"><span class="item">Branch</span><span 
+                            class="colon">:</span></span>
+                        </label>
+                        <div class="input">
+                            <select name="branch" id="branch" required>
+                                <option value="other">Select your Branch</option>
+                                <option value="cse">Computer Science and Engineering</option>
+                                <option value="ise">Information Science and Engineering</option>
+
+                                <option value="eee">Electricals and Electronics and Engineering</option>
+
+                                <option value="ece">Electricals and Communication and Engineering</option>
+
+                                <option value="ce"> civil Engineering</option>
+                                <option value="me">Mechanical Engineering</option>
+
+                                <option value="aiml">Artificial Intelligence and Machine Learning and Engineering
+                                </option>
+
+                                <option value="csbs">Computer Science and Business Studies and Engineering</option>
+                            </select>
+                        </div>
+                        <p>(* Branch of faculty)</p>
+                    </div>
+                </div>
+
+                <div class="blockforFaculties blocks">
+                    <label for="faculties">
+                        <span class="span"><span class="item">Complain To</span><span class="colon">:</span></span>
+                    </label>
+                    <div class="input">
+                        <select name="faculties" id="faculties" disabled required>
+                            <option value="otherFaculty">Select the Faculty</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="blockforMessage blocks">
+                    <textarea name="persoanalMessage" id="persoanalMessage" placeholder="Express Your Emotion freely, openly" required>
+                </textarea>
+                </div>
+
+                <div class="blockforCheckBox blocks">
+                    <input type="checkbox" name="agreed" id="agreed" required>
+                    <label for="agreed">I'm Okay to reveal my Name with <span id="teacherName">teacher</span> </label>
+                </div>
+
+                <div class="blockforCheckBox blocks">
+                    <input type="submit" value="submit" title="Please select the checkbox">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="message.js"></script>
+</body>
+
+</html>
