@@ -365,7 +365,7 @@ body {
 }
 
 @media(width <=698px) {
-    
+
     .heropageContainer {
         justify-content: center;
     }
@@ -406,9 +406,11 @@ body {
 }
 
 @media(width < 500px) {
-    .navbar{
+
+    .heropageContainer {
         height: 110vh;
     }
+
     .servicesImage {
         display: none;
     }
@@ -467,6 +469,3 @@ body {
     }
 
 }
-
-
-
