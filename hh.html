@@ -1,0 +1,56 @@
+
+const night = document.querySelector('.col2');
+console.log(night)
+const happynight = night.querySelector('.reasons-for-happiness');
+console.log(happynight)
+
+const sadnight = night.querySelector('.reasons-for-sadness');
+const angrynight = night.querySelector('.reasons-for-angryness');
+const surprisednight = night.querySelector('.reasons-for-surprisedness');
+const pridenight = night.querySelector('.reasons-for-prideness');
+const crynight = night.querySelector('.reasons-for-cryness');
+const awkwardnight = night.querySelector('.reasons-for-awkwardness');
+const afraidnight = night.querySelector('.reasons-for-afraidness');
+const blushnight = night.querySelector('.reasons-for-blushness');
+const nightMood = night.querySelectorAll("input[name='nightmood']");
+console.log(nightMood)
+
+const hidden_contentnight = night.querySelectorAll('.hidden_content');
+console.log(hidden_contentnight)
+
+nightMood.forEach(element => {
+    element.addEventListener('click', () => {
+        hidden_contentnight.forEach(e => {
+            e.style.display='none';
+        });
+        if (element.id == 'happynight' && element.checked) {
+            happynight.style.display = 'block';
+            console.log('hii')
+        }
+        if (element.id == 'sadnight' && element.checked) {
+            sadnight.style.display = 'block';
+        }
+        if (element.id == 'angrynight' && element.checked) {
+            angrynight.style.display = 'block';
+        }
+        if (element.id == 'surprisednight' && element.checked) {
+            surprisednight.style.display = 'block';
+        }
+        if (element.id == 'pridenight' && element.checked) {
+            pridenight.style.display = 'block';
+        }
+        if (element.id == 'crynight' && element.checked) {
+            crynight.style.display = 'block';
+        }
+        if (element.id == 'awkwardnight' && element.checked) {
+            awkwardnight.style.display = 'block';
+        }
+        if (element.id == 'afraidnight' && element.checked) {
+            afraidnight.style.display = 'block';
+        }
+        if (element.id == 'blushnight' && element.checked) {
+            blushnight.style.display = 'block';
+        }
+    });
+});
+
