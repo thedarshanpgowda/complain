@@ -406,7 +406,9 @@ body {
 }
 
 @media(width < 500px) {
-
+    .navbar{
+        height: 110vh;
+    }
     .servicesImage {
         display: none;
     }
