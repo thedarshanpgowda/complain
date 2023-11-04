@@ -123,8 +123,9 @@ body::after {
 
 .innerHeroContentBlog {
     outline: 2px red solid;
-    outline-offset: 20px;
+    /* outline-offset: 20px; */
     padding: 30px;
+    border-radius: 20px;
     background-color: #1a1a1a;
     /* border-radius: 5px; */
 }
@@ -286,6 +287,13 @@ body::after {
 }
 
 @media(width < 500px) {
+    .heropageContainerBlog {
+        height: 60%;
+    }
+
+    .heropageContainerBlog p {
+        padding: 15px;
+    }
 
     .innerHeroContentBlog {
         padding: 20px;
@@ -317,6 +325,8 @@ body::after {
         grid-template-columns: repeat(1, 100%);
         grid-column-gap: 35px;
         padding: 35px;
+        position: relative;
+        top: -20%;
     }
 
     .blog:nth-child(1) .blogInnerContent2,
