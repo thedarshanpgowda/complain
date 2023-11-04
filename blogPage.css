@@ -8,6 +8,11 @@
         url("https://db.onlinewebfonts.com/t/3d48c3729d085b0245285cadace11025.svg#Daytona W01 Light Italic")format("svg");
 }
 
+@font-face {
+    font-family: graphic;
+    src: url('Graphik-Regular.ttf');
+}
+
 body {
     position: relative;
 }
@@ -29,9 +34,11 @@ body::before {
     object-position: center;
     aspect-ratio: 1;
 }
-img{
+
+img {
     padding-right: 30px;
 }
+
 .container {
     padding: 60px;
     border-radius: 10px;
@@ -76,13 +83,16 @@ b {
 ul li,
 a {
     text-align: left;
-    font-family: "Daytona W01 Light Italic";
-    font-weight: 600;
+    font-family: 'graphic';
+    font-weight: 500;
+    line-height: 25px;
 }
-.inner-content2-content1 p::first-letter{
+
+.inner-content2-content1 p::first-letter {
     font-size: 30px;
 
 }
+
 .content1 img {
     margin: 50px auto;
     height: 300px;
@@ -99,13 +109,16 @@ a {
     align-items: center;
     width: 60%;
 }
-ul li{
+
+ul li {
     padding: 20px 0px;
 }
-b{
+
+b {
     text-decoration: underline;
     font-weight: 900;
 }
+
 .footer {
     display: flex;
     justify-content: center;
@@ -144,13 +157,15 @@ b{
         /* padding: 30px; */
     }
 }
-@media(Width <600px){
-    .heading h2{
+
+@media(Width <600px) {
+    .heading h2 {
         font-size: 2rem;
     }
+
     .content1 img {
         margin: 0px auto;
         height: 200px;
     }
-   
+
 }
