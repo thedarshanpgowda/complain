@@ -12,35 +12,15 @@
     font-family: graphic;
     src: url('Graphik-Regular.ttf');
 }
-
+@font-face {
+    font-family: means-light;
+    src: url('Means-Light-Web.7121f5d6.1.woff2');
+}
 body {
     position: relative;
 }
 
-body::before {
-    content: "";
-    background-image: url('https://images.unsplash.com/photo-1682685796014-2f342188a635?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D');
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 1;
-    box-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        100px 100px 80px rgba(0, 0, 0, 0.07);
-}
+
 
 img {
     padding-right: 30px;
@@ -60,8 +40,8 @@ img {
 
 .heading h2 {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4rem;
+    font-family: means-light;
+        font-size: 4rem;
     padding-bottom: 50px;
 }
 
@@ -86,6 +66,7 @@ a {
     font-family: 'graphic';
     font-weight: 500;
     line-height: 25px;
+    font-size: 16px;
 }
 
 .inner-content2-content1 p::first-letter {

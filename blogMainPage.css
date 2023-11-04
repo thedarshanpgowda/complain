@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Daytona W01 Light Italic";
+    src: url("https://db.onlinewebfonts.com/t/3d48c3729d085b0245285cadace11025.eot");
+    src: url("https://db.onlinewebfonts.com/t/3d48c3729d085b0245285cadace11025.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/3d48c3729d085b0245285cadace11025.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/3d48c3729d085b0245285cadace11025.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/3d48c3729d085b0245285cadace11025.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/3d48c3729d085b0245285cadace11025.svg#Daytona W01 Light Italic")format("svg");
+}
+
+@font-face {
+    font-family: graphic;
+    src: url('Graphik-Regular.ttf');
+}
+@font-face {
+    font-family: means-light;
+    src: url('Means-Light-Web.7121f5d6.1.woff2');
+}
+body {
+    position: relative;
+}
