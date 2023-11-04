@@ -33,6 +33,7 @@ body {
     margin: 100px 150px 0px 50px;
     margin-left: 100px;
     position: relative;
+    background-color: #e6ddde;
 }
 
 .blockForQuote {
@@ -48,13 +49,7 @@ body {
     top: -23%;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        100px 100px 80px rgba(0, 0, 0, 0.07);
+   
 }
 
 .quote {
@@ -145,6 +140,7 @@ li,
 span {
     font-family: graphic;
     color: black;
+    line-height: 30px;
 }
 
 .instruction {
@@ -155,7 +151,7 @@ span {
 }
 
 .content2 ul li {
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .content2 ul li b {
@@ -173,6 +169,10 @@ span {
     width: 150px;
     margin: auto;
     padding: 20px;
+}
+
+.content2 .question h3{
+    text-align: left;
 }
 
 @media(width < 1000px) {
@@ -232,6 +232,12 @@ span {
 }
 @media(width<500px){
     .blockForQuote {
-        top: -20%;
+        top: -14%;
+      }
+      .container{
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+        transform: translateY(-10%);
       }
 }
