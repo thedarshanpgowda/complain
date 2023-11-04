@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
   const faculties = {
     cse: [
       "Dr. Ramesh B",
@@ -270,4 +269,3 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     p2.style.left = "0%";
   }, 6500);
-});
