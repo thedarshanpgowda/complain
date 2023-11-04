@@ -8,6 +8,10 @@ body {
     padding: 50px;
 }
 
+.primary_body_content {
+    overflow: hidden;
+}
+
 .header h2 {
     font-family: 'Alegreya', serif;
 }
@@ -91,9 +95,91 @@ input[type="submit"] {
     display: block;
     margin: auto;
 }
-.blocks p{
+
+.blocks p {
     font-size: 10px;
 }
+
+.extra {
+    position: absolute;
+    bottom: 10%;
+    right: -100%;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.6s ease;
+    overflow: hidden;
+}
+.extra_content {
+    position: relative;
+    right: -6px;
+    width: 250px;
+    padding: 10px;
+    border: 2px #000a solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.extra_content::before {
+    content: "";
+    background-image: url('https://img.freepik.com/premium-vector/social-networks-dating-apps-vector-seamless-pattern_341076-469.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.extraimg::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: -2;
+    border-width: 15px 0px 15px 11px;
+    border-color: transparent  transparent transparent #000a;
+    right: 45px;
+}
+
+.extra img {
+    height: 50px;
+    position: relative;
+    float: right;
+    margin-left: 10px;
+}
+
+.main_name {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #edd0c2;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.message p {
+    padding: 3px 9px;
+    font-size: 11px;
+    width: 180px;
+    margin: 3px 0px;
+    background-color: #ededed;
+    border-radius: 12px;
+}
+
+.p1,
+.p2 {
+    position: relative;
+    left: -200%;
+    transition: 0.6s ease;
+}
+
 @media(width < 700px) {
     body {
         padding: 20px;

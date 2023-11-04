@@ -8,6 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const BranchBlock = document.getElementById("branch");
   const facultiesBlock = document.querySelector(".blockforFaculties select");
 
+  const checkbox = document.querySelector('input[type="checkbox"]');
+  const submitButton = document.querySelector('input[type="submit"]');
+
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      submitButton.removeAttribute("disabled");
+    } else {
+      submitButton.setAttribute("disabled", "true");
+    }
+  });
+
   function updateFaculty() {
     facultiesBlock.removeAttribute("disabled");
     const selectedBranch = BranchBlock.value;
@@ -20,8 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       facultiesBlock.appendChild(block);
     });
   }
-  BranchBlock.addEventListener("change", updateFaculty);
-  updateFaculty();
 
   function updateTeacherName() {
     const teacherName = facultiesBlock.value;
@@ -29,17 +38,26 @@ document.addEventListener("DOMContentLoaded", () => {
     teacherBlock.innerHTML = teacherName;
   }
 
-  facultiesBlock.addEventListener("change", updateTeacherName);
+  updateFaculty();
   updateTeacherName();
 
-  const checkbox = document.querySelector('input[type="checkbox"]');
-  const submitButton = document.querySelector('input[type="submit"]');
+  facultiesBlock.addEventListener("change", updateTeacherName);
+  BranchBlock.addEventListener("change", updateFaculty);
 
-  checkbox.addEventListener("change", () => {
-    if (checkbox.checked) {
-      submitButton.removeAttribute("disabled");
-    } else{
-      submitButton.setAttribute("disabled", "true");
-    }
-  });
+  const extra = document.querySelector(".extra");
+  setTimeout(() => {
+    extra.style.right = "5%";
+  }, 3000);
+
+  const p1 = document.querySelector(".p1");
+  setTimeout(() => {
+    p1.style.left = "0%";
+  }, 4000);
+
+  const p2 = document.querySelector(".p2");
+  setTimeout(() => {
+    p2.style.left = "0%";
+  }, 5000);
+  
+  
 });
