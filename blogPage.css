@@ -19,7 +19,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url('images/backblog.jpg');
+    background-image: url('https://images.unsplash.com/photo-1682685796014-2f342188a635?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D');
     display: block;
     position: fixed;
     top: 0;
@@ -33,6 +33,13 @@ body::before {
     object-fit: cover;
     object-position: center;
     aspect-ratio: 1;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 img {
@@ -43,13 +50,7 @@ img {
     padding: 60px;
     border-radius: 10px;
     margin: 50px 100px;
-    box-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        100px 100px 80px rgba(0, 0, 0, 0.07);
+    
     background-color: #ededed;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);
@@ -127,6 +128,12 @@ b {
     font-size: 1.5rem;
 }
 
+@media(width<900px) {
+    .container{
+        padding: 20px;
+        margin: 20px;
+    }
+}
 @media(width<800px) {
     .container {
         padding: 30px;
@@ -167,5 +174,10 @@ b {
         margin: 0px auto;
         height: 200px;
     }
+    .container{
+        padding: 10px;
+        margin: 2px;
+    }
+
 
 }
