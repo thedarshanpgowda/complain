@@ -227,12 +227,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
   function updateFaculty() {
     console.log('in')
     const selectedBranch = BranchBlock.value;
     facultiesBlock.innerHTML = "";
-
+    
     faculties[selectedBranch].forEach(faculty => {
       const option = document.createElement('option');
       option.text = faculty;
@@ -240,12 +239,14 @@ document.addEventListener("DOMContentLoaded", () => {
       facultiesBlock.appendChild(option);
     });
   }
-
+  
   function updateTeacherName() {
     const teacherName = facultiesBlock.value;
     const teacherBlock = document.getElementById("teacherName");
     teacherBlock.innerHTML = teacherName;
   }
+
+
 
   updateFaculty();
   updateTeacherName();
