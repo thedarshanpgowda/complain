@@ -38,24 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
     teacherBlock.innerHTML = teacherName;
   }
 
-  updateFaculty();
-  updateTeacherName();
+  const extra = document.querySelector('.extra');
+  setTimeout(()=>{
+    extra.style.right = '5%';
+  },3000)
 
-  facultiesBlock.addEventListener("change", updateTeacherName);
-  BranchBlock.addEventListener("change", updateFaculty);
+  const p1 = document.querySelector('.p1');
+  setTimeout(()=>{
+    p1.style.left = '0%';
+  },4000)
 
-  const extra = document.querySelector(".extra");
-  setTimeout(() => {
-    extra.style.right = "5%";
-  }, 3000);
+  const p2 = document.querySelector('.p2');
+  setTimeout(()=>{
+    p2.style.left = '0%';
+  },5000)
 
-  const p1 = document.querySelector(".p1");
-  setTimeout(() => {
-    p1.style.left = "0%";
-  }, 4000);
 
-  const p2 = document.querySelector(".p2");
-  setTimeout(() => {
-    p2.style.left = "0%";
-  }, 5000);
 });
