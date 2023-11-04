@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  
+
   function updateFaculty() {
     console.log('in')
     const selectedBranch = BranchBlock.value;
@@ -246,8 +246,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const teacherBlock = document.getElementById("teacherName");
     teacherBlock.innerHTML = teacherName;
   }
-
-
 
   updateFaculty();
   updateTeacherName();
