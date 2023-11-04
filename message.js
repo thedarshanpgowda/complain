@@ -58,6 +58,4 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     p2.style.left = "0%";
   }, 5000);
-  
-  
 });
