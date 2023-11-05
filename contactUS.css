@@ -1,0 +1,69 @@
+@font-face {
+    font-family: means;
+    src: url('Means-Light-Web.7121f5d6.1.woff2');
+}
+body{
+    overflow: auto;
+}
+.header{
+    height: 300px;
+    background-color: #c7c7c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: means;
+}
+.mainContentContact{
+    width: 100vw;
+}
+.header h2{
+    font-size: clamp(20px,3vw,40px);
+}
+textarea{
+    width: 90vw;
+    display: block;
+    height: 20vh;
+    resize: none;
+    display: block;
+    padding: 20px;
+    margin: 10px 0px;
+}
+.mainHeaderContent{
+    padding: 50px;
+}
+.mainContentContact input{
+    padding: 10px;
+    width: 47%;
+    margin: 10px 0px;
+}
+.mainHeaderContent{
+    padding: 30px;
+}
+.mainContentContact p{
+    text-align: center;
+    margin-bottom: 2px;
+}
+input[type="submit"]{
+    width: 250px;
+    margin: auto;
+    display: block;
+}
+.mainInfo p{
+    text-align: justify;
+}
+.mainInfo h1{
+    text-align: center;
+}
+.mainInfo{
+    padding: 15px;
+    width: 43%;
+}
+.ourInfo{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 100px;
+}
+.extracontent{
+    background-color: aliceblue;
+}

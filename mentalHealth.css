@@ -1,0 +1,54 @@
+@font-face {
+    font-family: graphic;
+    src: url('Graphik-Regular.ttf');
+}
+
+@font-face {
+    font-family: means-light;
+    src: url('Means-Light-Web.7121f5d6.1.woff2');
+}
+
+.header h1 {
+    font-size: clamp(20px, 4vw, 50px);
+    font-family: means-light;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-decoration: underline;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instructions p{
+    background: antiquewhite;
+}
+.container {
+    padding: 50px;
+}
+
+@media(width<600px) {
+
+    h2 {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .header {
+        height: 200px;
+    }
+
+    .instructions p{
+        padding: 10px;
+        font-size: 12px;
+    }
+}
