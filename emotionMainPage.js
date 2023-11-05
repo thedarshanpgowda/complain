@@ -13,8 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const li = document.querySelectorAll(" ul li");
   const images = document.querySelector(".loginImage");
   const loginPage = document.querySelector(".loginPage");
+  const SignupPage = document.querySelector(".SignupPage");
   const buttonLogin = document.querySelector(".log-in-button");
+  const buttonSignup = document.querySelector(".Signup-button");
   const cancelBar = document.querySelector(".cancelBar");
+  const cancelSignupBar = document.querySelector(".cancelSignupBar");
 
   //border on focus
   inputEmail.addEventListener("focus", () => {
@@ -52,6 +55,16 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonLogin.addEventListener("click", login);
 
   cancelBar.addEventListener("click", () => {
-    loginPage.style.display = "none";
+      loginPage.style.display = "none";
+  });
+
+  cancelSignupBar.addEventListener("click", () => {
+      SignupPage.style.display = "none";
+  });
+
+  //Sign up pop up
+  buttonSignup.addEventListener("click", ()=>{
+    console.log("hello")
+        SignupPage.style.display = "flex";
   });
 });

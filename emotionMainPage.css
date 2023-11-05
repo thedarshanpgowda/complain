@@ -60,7 +60,8 @@ body {
     width: 100%;
 }
 
-.cancelBar{
+.cancelBar,
+.cancelSignupBar{
     position: absolute;
     top: 3%;
     cursor: pointer;
@@ -71,13 +72,14 @@ body {
         left: 6%;
     }
 }
-.cancelBar img {
+.cancelBar img,
+.cancelSignupBar img {
     height: 30px;
     cursor: pointer;
     transform: rotate(-180deg);
 }
 
-.loginPage {
+.loginPage, .SignupPage {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -118,7 +120,6 @@ input[type='password'] {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 40px;
     border-radius: 30px;
 }
@@ -132,12 +133,22 @@ input[type='password'] {
     align-items: center;
     border-radius: 10px;
 }
+input:not(input[type="checkbox"]){
+    width: 250px;
+}
 
 .blockforAccessories {
     display: flex;
     font-size: 12px;
     justify-content: space-between;
     background-color: transparent;
+    padding: 10px;
+    width: 300px;
+    background-color: #ededed;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .blockForSubmit {
@@ -171,6 +182,7 @@ input[type='password'] {
 
 .header {
     border-bottom: 1px brown solid;
+    font-size: clamp(12px,1.52vw,18px);
 }
 
 .HeroContent {
