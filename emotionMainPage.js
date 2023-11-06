@@ -1,18 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const img = [
-    "https://images.unsplash.com/photo-1542865763-0339b28c4a34?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZW1vdGlvbnN8ZW58MHwxfDB8fHww",
-    "https://images.unsplash.com/photo-1527236438218-d82077ae1f85?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGVtb3Rpb258ZW58MHwxfDB8fHww",
-    "https://images.unsplash.com/photo-1553465528-5a213ccc0c7b?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fGVtb3Rpb258ZW58MHwxfDB8fHww",
-    "https://images.unsplash.com/photo-1529391387768-ab39476d6a52?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
-    "https://images.unsplash.com/photo-1542641734-3b824eaabad0?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjB8fHxlbnwwfHx8fHw%3D",
-    "https://images.unsplash.com/photo-1542372712-fc07597133cd?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fHw%3D",
-    "https://images.unsplash.com/photo-1521109464564-2fa2faa95858?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D",
-    "https://images.unsplash.com/photo-1520262494112-9fe481d36ec3?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8ODh8fHxlbnwwfHx8fHw%3D",
-    "https://images.unsplash.com/photo-1621171152288-cff16cd4d671?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTAxfHx8ZW58MHx8fHx8",
-    "https://images.unsplash.com/photo-1543946207-39bd91e70ca7?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fHw%3D",
-    "https://images.unsplash.com/photo-1505322022379-7c3353ee6291?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjJ8fHxlbnwwfHx8fHw%3D",
-    "https://images.unsplash.com/photo-1500817487388-039e623edc21?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzR8fHxlbnwwfHx8fHw%3D",
+  "images/img1.jpg", "images/img2.jpg" , "images/img3.jpg" , "images/img4.jpg", "images/img5.jpg", "images/img6.jpg","images/img7.jpg","images/img8.jpg","images/img9.jpg","images/img10.jpg","images/img11.jpg"
   ];
 
   const inputEmail = document.querySelector('input[type = "email"]');
