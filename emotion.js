@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  const menu = document.querySelector('.menubar');
+  const DashboardContainer = document.querySelector('.DashboardContainer');
+  menu.addEventListener('click',()=>{
+    
+    DashboardContainer.classList.toggle('visibleContent');
+  })
+  
   const date = document.querySelector("#date");
   setInterval(() => {
     let d = new Date();

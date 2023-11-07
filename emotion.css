@@ -1,3 +1,11 @@
+@font-face {
+    font-family: means;
+    src: url('Means-Light-Web.7121f5d6.1.woff2');
+}
+
+* {
+    /* border: 2px red solid; */
+}
 
 body {
     /* padding: 50px; */
@@ -8,6 +16,7 @@ body {
 
 .body_content {
     padding: 50px;
+    height: 100%;
 }
 
 
@@ -30,6 +39,7 @@ body::before {
 }
 
 .container {
+    width: 77%;
     border: 1px black solid;
     padding: 20px;
     display: flex;
@@ -49,9 +59,32 @@ body::before {
     border: 1px solid rgba(255, 255, 255, 0.175);
 }
 
+.menubar {
+    position: absolute;
+    z-index: 2;
+    top: 4%;
+    display: none;
+    right: 7%;
+}
+
+.menubar img {
+    height: 30px;
+}
+
 .credentials {
-    width: 90vw;
+    width: 90%;
     margin: 20px 0px;
+}
+
+.header {
+    padding: 20px 10px;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: means;
+
 }
 
 .credentials ul {
@@ -65,9 +98,55 @@ body::before {
     font-weight: 700;
 }
 
+.CompleteContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DashboardContainer {
+    width: 21%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+        13.9px 13.9px 2.2px rgba(0, 0, 0, 0.032),
+        25.8px 25.8px 5.3px rgba(0, 0, 0, 0.055),
+        35.7px 35.7px 10px rgba(0, 0, 0, 0.072),
+        44.2px 44.2px 17.9px rgba(0, 0, 0, 0.084),
+        54.9px 54.9px 33.4px rgba(0, 0, 0, 0.089),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.35);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.175);
+    /* margin: auto; */
+}
+
+.navigationBar {
+    transform: translateY(130%);
+}
+
+.navigationBar li {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navigationBar li:hover,
+.active {
+    background-color: #ededed;
+    font-weight: 400;
+}
+
 .mainBody {
     padding: 10px;
-    width: 90vw;
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -92,6 +171,8 @@ body::before {
 .col {
     width: 33%;
     text-align: center;
+    padding: 20px;
+    margin: 10px;
 }
 
 .innerContainer form {
@@ -101,12 +182,13 @@ body::before {
     top: 100%;
 }
 
-.innerContainer{
+.innerContainer {
     display: flex;
     justify-content: center;
     position: relative;
     align-items: flex-start;
 }
+
 .innerContainer figcaption {
     font-size: 13px;
     padding: 3px 15px;
@@ -117,9 +199,10 @@ body::before {
 }
 
 .col img {
-    height: 40px;
+    height: 30px;
 }
-.col1{
+
+.col1 {
     position: relative;
 }
 
@@ -154,24 +237,27 @@ body::before {
 
 .emojis label::before {
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     background-color: #ededed;
     display: block;
     border-radius: 50%;
     position: absolute;
-    top: -7%;
-    left: -5%;
+    top: 0;
+    left: 0;
 }
 
 :checked+label::before {
     content: "✓";
+    line-height: 22px;
     /* filter: invert(1); */
 }
-:checked+label img{
+
+:checked+label img {
     transform: scale(0.9);
 }
-textarea{
+
+textarea {
     resize: none;
     background-color: #edededbf;
     border-radius: 10px;
@@ -180,24 +266,29 @@ textarea{
     /* display: none; */
     text-indent: 20px;
     outline: 1px solid #5a3a3a;
-
+    width: 100%;
 }
-textarea:focus{
+
+textarea:focus {
     outline: 2px solid #5a3a3a;
 }
-.call2action button{
+
+.call2action button {
     padding: 15px 30px;
     border-radius: 10px;
 }
-.hidden_content{
+
+.hidden_content {
     background-color: aliceblue;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.hiddenItems{
+
+.hiddenItems {
     position: relative;
 }
+
 .reasons-for-happiness,
 .reasons-for-sadness,
 .reasons-for-surprisedness,
@@ -206,39 +297,93 @@ textarea:focus{
 .reasons-for-otherness,
 .reasons-for-afraidness,
 .reasons-for-awkwardness,
-.reasons-for-angryness{
+.reasons-for-angryness {
     display: none;
 }
 
-.options{
+.options {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 50px;
-
-    
+    margin-left: 5px;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     padding: 10px;
     margin: 10px auto;
     width: 100px;
     cursor: pointer;
 }
-@media screen and (max-width: 930px) and (min-width:690px){
-    .header h1{
+
+@media screen and (max-width: 1130px) and (min-width:690px) {
+    .header h1 {
         text-align: center;
     }
+
     .innerContainer form {
         display: grid;
         grid-template-columns: repeat(2, auto);
     }
-   
-    
+
+    .body_content {
+        padding: 50px 20px 50px 20px;
+    }
+
+
 }
-@media screen and (max-width: 690px){
-    .body_content{
+
+@media screen and (max-width: 690px) {
+    .NameCredentials {
+        flex-direction: row;
+        margin: 15px 0px;
+    }
+
+    .body_content {
         padding: 20px;
     }
+
+    .menubar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .DashboardContainer {
+        position: absolute;
+        z-index: 1;
+        background: aliceblue;
+        width: 92vw;
+        height: 100vh;
+        margin-top: -209%;
+        margin: -209% auto 0% auto;
+
+        transition: 0.6s all ease-in-out;
+    }
+
+    .navigationBar li {
+        width: 50%;
+    }
+
+    .navigationBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .visibleContent {
+        margin-top: 1%;
+
+    }
+
+    .navigationBar li {
+        text-align: center;
+        cursor: pointer;
+    }
+
     .innerbox {
         display: flex;
         width: 100%;
@@ -246,7 +391,8 @@ input[type="submit"]{
         align-items: flex-start;
         flex-direction: column;
     }
-    .col{
+
+    .col {
         width: 90%;
         display: block;
         margin: 30px auto;
@@ -256,15 +402,14 @@ input[type="submit"]{
         border: none;
         border-bottom: 2px #5a3a3a solid;
     }
-    .credentials ul{
+
+
+    .credentials ul:first-child {
         display: flex;
         flex-direction: column;
     }
-    .credentials ul{
-        display: flex;
-        flex-direction: column;
-    }    
-    .emojis img{
+
+    .emojis img {
         height: 30px;
     }
 }

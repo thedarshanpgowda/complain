@@ -91,7 +91,6 @@ body {
 .heading h2 {
     font-size: clamp(20px, 5vw, 50px);
     font-family: means-light;
-    border-bottom: 1px #484749 solid;
     text-align: center;
 }
 

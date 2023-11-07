@@ -67,3 +67,14 @@ input[type="submit"]{
 .extracontent{
     background-color: aliceblue;
 }
+@media(width<800px){
+    .ourInfo{
+        flex-direction: column;
+        padding: 30px;
+
+    }
+    .mainInfo{
+        width: 100%;
+        padding: 10px;
+    }
+}

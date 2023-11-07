@@ -1,0 +1,76 @@
+.mainContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+}
+
+.rightcontainer {
+    width: 20%;
+    padding: 30px;
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.leftcontainer {
+    width: 75%;
+    padding: 30px;
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+.rightcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightcontainer li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.rightcontainer li:hover {
+    background-color: #fff;
+}
+
+.messagesBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.block {
+    border: 2px black solid;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footerBlock {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.replyButton button {
+    padding: 10px;
+    color: blue;
+    background-color: transparent;
+}
+
+.replyButton img {
+    height: 20px;
+}
+
+.replyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    padding: 10px;
+  text-align: center;
+}
