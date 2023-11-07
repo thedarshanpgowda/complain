@@ -406,7 +406,7 @@ body {
 @media(width < 500px) {
 
     .heropageContainer {
-        height: 110vh;
+        height: 120vh;
     }
 
     .servicesImage {

@@ -62,7 +62,7 @@ body::before {
 .menubar {
     position: absolute;
     z-index: 2;
-    top: 4%;
+    top: 5%;
     display: none;
     right: 7%;
 }
@@ -136,6 +136,7 @@ body::before {
     margin: 10px 0px;
     font-weight: 600;
     cursor: pointer;
+    text-align: center;
 }
 
 .navigationBar li:hover,
@@ -354,7 +355,7 @@ input[type="submit"] {
         width: 92vw;
         height: 100vh;
         margin-top: -209%;
-        margin: -209% auto 0% auto;
+        margin: -259% auto 0% auto;
 
         transition: 0.6s all ease-in-out;
     }
@@ -411,5 +412,8 @@ input[type="submit"] {
 
     .emojis img {
         height: 30px;
+    }
+    .navigationBar {
+        transform: translateY(60%);
     }
 }

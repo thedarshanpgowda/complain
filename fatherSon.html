@@ -8,12 +8,41 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="blogMainPage.css">
     <style>
-        .blockForQuote {
-            top: -9%;
+
+        @media(width<500px) {
+            .blockForQuote {
+                top: -6%;
+            }
+        }
+
+        @media(500px<width<700px) {
+            .blockForQuote {
+                top: 7%;
+            }
+        }
+
+        @media(700px<width<1200px) {
+            .blockForQuote {
+                top: 12%;
+            }
+        }
+        @media(width>1200px){
+            .blockForQuote{
+                top: 12%;
+            }
         }
 
         .heading::before {
             background-image: url('/images/bgimage0.jpg');
+        }
+
+        @media (width < 500px) {
+            .container {
+                padding: 20px;
+                position: relative;
+                z-index: 2;
+                transform: translateY(0%);
+            }
         }
     </style>
 </head>

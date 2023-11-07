@@ -8,8 +8,33 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="blogMainPage.css">
     <style>
-        .blockForQuote {
-            top: -23%;
+        
+
+        @media (width < 500px) {
+            .container {
+                padding: 20px;
+                position: relative;
+                z-index: 2;
+                transform: translateY(0%);
+            }
+        }
+
+        @media(width<500px) {
+            .blockForQuote {
+                top: -9%;
+            }
+        }
+
+        @media(500px<width<700px) {
+            .blockForQuote {
+                top: 12%;
+            }
+        }
+
+        @media(width>700px) {
+            .blockForQuote {
+                top: 18%;
+            }
         }
 
         .heading::before {
@@ -148,7 +173,7 @@
                                 <b>Reduce stress : </b> Stress can significantly harm the body’s hormones in many ways.
                                 Work to
                                 decrease and manage your daily stress.
-                                
+
 
                             </div>
                         </li>

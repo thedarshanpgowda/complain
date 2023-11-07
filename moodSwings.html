@@ -8,15 +8,21 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="blogMainPage.css">
     <style>
-        .blockForQuote {
-            top: -31%;
-        }
         .heading::before {
             background-image: url('/images/bgimage4.jpg');
         }
+
         .heading h2 {
             color: #fff;
         }
+
+        @media(width<500px) {
+            .blockForQuote {
+                top: -23%;
+            }
+        }
+
+    
     </style>
 </head>
 
@@ -59,7 +65,8 @@
                 <div class="content2 content">
                     <div class="question">
                         <h3 style="text-align: left;
-                        font-size: 21px;">There's no such thing as good people or bad people, there are just people who do wrong
+                        font-size: 21px;">There's no such thing as good people or bad people, there are just people who
+                            do wrong
                             things.</h3>
                     </div>
                     <ul>

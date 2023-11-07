@@ -11,10 +11,29 @@
         .heading::before {
             background-image: url('/images/bgimage8.jpg');
         }
-    </style>
-    <style>
-        .blockForQuote {
-            top: -27%;
+
+        .heading h2 {
+            color: aliceblue;
+        }
+
+
+
+        @media(width<500px) {
+            .blockForQuote {
+                top: -27%;
+            }
+        }
+
+        @media(500px<width<700px) {
+            .blockForQuote {
+                top: 12%;
+            }
+        }
+
+        @media(width>700px) {
+            .blockForQuote {
+                top: 27%;
+            }
         }
     </style>
 </head>

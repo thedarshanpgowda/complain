@@ -8,14 +8,32 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="blogMainPage.css">
     <style>
-        .blockForQuote {
-            top: -27%;
-        }
+        
+
         .heading::before {
             background-image: url('/images/bgimage9.jpg');
         }
-        .heading h2{
+
+        .heading h2 {
             color: #fff;
+        }
+
+        @media(width<500px) {
+            .blockForQuote {
+            top: -20%;
+        }
+        }
+
+        @media(500px<width<700px) {
+            .blockForQuote {
+                top: 12%;
+            }
+        }
+
+        @media(width>700px) {
+            .blockForQuote {
+                top: 26%;
+            }
         }
     </style>
 </head>
