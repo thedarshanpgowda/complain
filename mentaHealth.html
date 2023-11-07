@@ -11,6 +11,16 @@
 
 <body>
     <div class="container">
+        <div class="result">
+            <img src="https://cdn-icons-png.flaticon.com/128/1250/1250673.png" alt="">
+            <h2>Congratualations</h2>
+            <div class="mainResult">
+                You're results have arrived
+                <div id="demo">
+
+                </div>
+            </div>
+        </div>
         <div class="header">
             <h1>Check your Mental Health Status here</h1>
         </div>
@@ -19,317 +29,444 @@
                 <p><b>Instruction: </b> take your time and answer <em>Patiently</em> </p>
             </div>
             <div class="mainBlock">
-                <form action="">
+                <form action="" id="form">
                     <ul>
                         <li>
                             <h2> How often do you feel overwhelming sadness or hopelessness?</h2>
                             <div class="options">
-                                <input type="radio" name="Question1" id="Question1_Option1" value="4">
-                                <label for="Question1_Option1">A. Almost every day</label>
-                                <br>
-                                <input type="radio" name="Question1" id="Question1_Option2" value="3">
-                                <label for="Question1_Option2">B. Several days a week</label>
-                                <br>
-                                <input type="radio" name="Question1" id="Question1_Option3" value="2">
-                                <label for="Question1_Option3">C. Occasionally</label>
-                                <br>
-                                <input type="radio" name="Question1" id="Question1_Option4" value="1">
-                                <label for="Question1_Option4">D. Rarely or never</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question1" id="Question1_Option1" value="4">
+                                    <label for="Question1_Option1">A. Almost every day</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question1" id="Question1_Option2" value="3">
+                                    <label for="Question1_Option2">B. Several days a week</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question1" id="Question1_Option3" value="2">
+                                    <label for="Question1_Option3">C. Occasionally</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question1" id="Question1_Option4" value="1">
+                                    <label for="Question1_Option4">D. Rarely or never</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2>Do you find it difficult to concentrate or make decisions? </h2>
                             <div class="options">
-                                <input type="radio" name="Question2" id="Question2_Option1" value="4">
-                                <label for="Question2_Option1">A. Yes,Most of the Time</label>
-                                <br>
-                                <input type="radio" name="Question2" id="Question2_Option2" value="3">
-                                <label for="Question2_Option2">B. Yes,Sometimes</label>
-                                <br>
-                                <input type="radio" name="Question2" id="Question2_Option3" value="2">
-                                <label for="Question2_Option3">C. Rarely</label>
-                                <br>
-                                <input type="radio" name="Question2" id="Question2_Option4" value="1">
-                                <label for="Question2_Option4">D. Not at all</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question2" id="Question2_Option1" value="4">
+                                    <label for="Question2_Option1">A. Yes,Most of the Time</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question2" id="Question2_Option2" value="3">
+                                    <label for="Question2_Option2">B. Yes,Sometimes</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question2" id="Question2_Option3" value="2">
+                                    <label for="Question2_Option3">C. Rarely</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question2" id="Question2_Option4" value="1">
+                                    <label for="Question2_Option4">D. Not at all</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2>How is your sleep pattern? </h2>
                             <div class="options">
-                                <input type="radio" name="Question3" id="Question3_Option1" value="4">
-                                <label for="Question3_Option1">A. I have trouble falling asleep or staying asleep every night</label>
-                                <br>
-                                <input type="radio" name="Question3" id="Question3_Option2" value="3">
-                                <label for="Question3_Option2">B. I have sleep distrbances several times a week</label>
-                                <br>
-                                <input type="radio" name="Question3" id="Question3_Option3" value="2">
-                                <label for="Question3_Option3">C. I have Occasional sleep disturbances</label>
-                                <br>
-                                <input type="radio" name="Question3" id="Question3_Option4" value="1">
-                                <label for="Question3_Option4">D. I have no trouble sleeping</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question3" id="Question3_Option1" value="4">
+                                    <label for="Question3_Option1">A. I have trouble falling asleep or staying asleep
+                                        every
+                                        night</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question3" id="Question3_Option2" value="3">
+                                    <label for="Question3_Option2">B. I have sleep distrbances several times a
+                                        week</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question3" id="Question3_Option3" value="2">
+                                    <label for="Question3_Option3">C. I have Occasional sleep disturbances</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question3" id="Question3_Option4" value="1">
+                                    <label for="Question3_Option4">D. I have no trouble sleeping</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2> Are you interested in activities or hobbies that you used to enjoy?</h2>
                             <div class="options">
-                                <input type="radio" name="Question4" id="Question4_Option1" value="4">
-                                <label for="Question4_Option1">A. Not at all</label>
-                                <br>
-                                <input type="radio" name="Question4" id="Question4_Option2" value="3">
-                                <label for="Question4_Option2">B. Rarely</label>
-                                <br>
-                                <input type="radio" name="Question4" id="Question4_Option3" value="2">
-                                <label for="Question4_Option3">C. Sometimes</label>
-                                <br>
-                                <input type="radio" name="Question4" id="Question4_Option4" value="1">
-                                <label for="Question4_Option4">D. Yes,most of the time</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question4" id="Question4_Option1" value="4">
+                                    <label for="Question4_Option1">A. Not at all</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question4" id="Question4_Option2" value="3">
+                                    <label for="Question4_Option2">B. Rarely</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question4" id="Question4_Option3" value="2">
+                                    <label for="Question4_Option3">C. Sometimes</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question4" id="Question4_Option4" value="1">
+                                    <label for="Question4_Option4">D. Yes,most of the time</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2>Do you experience changes in your appetite or weight?</h2>
                             <div class="options">
-                                <input type="radio" name="Question5" id="Question5_Option1" value="4">
-                                <label for="Question5_Option1">A. Significant decrease or increase in appetite and/or weight</label>
-                                <br>
-                                <input type="radio" name="Question5" id="Question5_Option2" value="3">
-                                <label for="Question5_Option2">B. Moderate changes in appetite and/or weight</label>
-                                <br>
-                                <input type="radio" name="Question5" id="Question5_Option3" value="2">
-                                <label for="Question5_Option3">C. Slight changes in appetite and/or weight</label>
-                                <br>
-                                <input type="radio" name="Question5" id="Question5_Option4" value="1">
-                                <label for="Question5_Option4">D. No noticeable changes</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question5" id="Question5_Option1" value="4">
+                                    <label for="Question5_Option1">A. Significant decrease or increase in appetite
+                                        and/or
+                                        weight</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question5" id="Question5_Option2" value="3">
+                                    <label for="Question5_Option2">B. Moderate changes in appetite and/or weight</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question5" id="Question5_Option3" value="2">
+                                    <label for="Question5_Option3">C. Slight changes in appetite and/or weight</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question5" id="Question5_Option4" value="1">
+                                    <label for="Question5_Option4">D. No noticeable changes</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2>How would you describe your energy levels?</h2>
                             <div class="options">
-                                <input type="radio" name="Question6" id="Question6_Option1" value="4">
-                                <label for="Question6_Option1">A. Always feeling tired and low on energy</label>
-                                <br>
-                                <input type="radio" name="Question6" id="Question6_Option2" value="3">
-                                <label for="Question6_Option2">B. Frequently low energy, struggling to stay active</label>
-                                <br>
-                                <input type="radio" name="Question6" id="Question6_Option3" value="2">
-                                <label for="Question6_Option3">C. Sometimes low energy, but manageable</label>
-                                <br>
-                                <input type="radio" name="Question6" id="Question6_Option4" value="1">
-                                <label for="Question6_Option4">D. Generally high energy, rarely feeling tired</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question6" id="Question6_Option1" value="4">
+                                    <label for="Question6_Option1">A. Always feeling tired and low on energy</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question6" id="Question6_Option2" value="3">
+                                    <label for="Question6_Option2">B. Frequently low energy, struggling to stay
+                                        active</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question6" id="Question6_Option3" value="2">
+                                    <label for="Question6_Option3">C. Sometimes low energy, but manageable</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question6" id="Question6_Option4" value="1">
+                                    <label for="Question6_Option4">D. Generally high energy, rarely feeling
+                                        tired</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
-                            <h2>Do you find yourself avoiding social activities or withdrawing from friends and family?    </h2>
+                            <h2>Do you find yourself avoiding social activities or withdrawing from friends and family?
+                            </h2>
                             <div class="options">
-                                <input type="radio" name="Question7" id="Question7_Option1" value="4">
-                                <label for="Question7_Option1">A. Yes, all the time</label>
-                                <br>
-                                <input type="radio" name="Question7" id="Question7_Option2" value="3">
-                                <label for="Question7_Option2">B. Yes, occasionally</label>
-                                <br>
-                                <input type="radio" name="Question7" id="Question7_Option3" value="2">
-                                <label for="Question7_Option3">C. Rarely</label>
-                                <br>
-                                <input type="radio" name="Question7" id="Question7_Option4" value="1">
-                                <label for="Question7_Option4">D. Not at all</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question7" id="Question7_Option1" value="4">
+                                    <label for="Question7_Option1">A. Yes, all the time</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question7" id="Question7_Option2" value="3">
+                                    <label for="Question7_Option2">B. Yes, occasionally</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question7" id="Question7_Option3" value="2">
+                                    <label for="Question7_Option3">C. Rarely</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question7" id="Question7_Option4" value="1">
+                                    <label for="Question7_Option4">D. Not at all</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2> Have you had thoughts of self-harm or suicide?</h2>
                             <div class="options">
-                                <input type="radio" name="Question8" id="Question8_Option1" value="4">
-                                <label for="Question8_Option1">A.Yes,frequently</label>
-                                <br>
-                                <input type="radio" name="Question8" id="Question8_Option2" value="3">
-                                <label for="Question8_Option2">B. Yes, Occasionally</label>
-                                <br>
-                                <input type="radio" name="Question8" id="Question8_Option3" value="2">
-                                <label for="Question8_Option3">C. Rarely</label>
-                                <br>
-                                <input type="radio" name="Question8" id="Question8_Option4" value="1">
-                                <label for="Question8_Option4">D. Never</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question8" id="Question8_Option1" value="4">
+                                    <label for="Question8_Option1">A.Yes,frequently</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question8" id="Question8_Option2" value="3">
+                                    <label for="Question8_Option2">B. Yes, Occasionally</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question8" id="Question8_Option3" value="2">
+                                    <label for="Question8_Option3">C. Rarely</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question8" id="Question8_Option4" value="1">
+                                    <label for="Question8_Option4">D. Never</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2>How would you rate your overall mood on most days? </h2>
                             <div class="options">
-                                <input type="radio" name="Question9" id="Question9_Option1" value="4">
-                                <label for="Question9_Option1">A.Very low, feeling extremely down </label>
-                                <br>
-                                <input type="radio" name="Question9" id="Question9_Option2" value="3">
-                                <label for="Question9_Option2">B. Low,Often feelinng sad or unhappy</label>
-                                <br>
-                                <input type="radio" name="Question9" id="Question9_Option3" value="2">
-                                <label for="Question9_Option3">C. MOderate,with occasional ups and downs</label>
-                                <br>
-                                <input type="radio" name="Question9" id="Question9_Option4" value="1">
-                                <label for="Question9_Option4">D.Generally positive,feeling content and happy</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question9" id="Question9_Option1" value="4">
+                                    <label for="Question9_Option1">A.Very low, feeling extremely down </label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question9" id="Question9_Option2" value="3">
+                                    <label for="Question9_Option2">B. Low,Often feelinng sad or unhappy</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question9" id="Question9_Option3" value="2">
+                                    <label for="Question9_Option3">C. MOderate,with occasional ups and downs</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question9" id="Question9_Option4" value="1">
+                                    <label for="Question9_Option4">D.Generally positive,feeling content and
+                                        happy</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2> Are you experiencing increased irritability or restlessness?</h2>
                             <div class="options">
-                                <input type="radio" name="Question10" id="Question10_Option1" value="4">
-                                <label for="Question10_Option1">A. Yes,Significantly</label>
-                                <br>
-                                <input type="radio" name="Question10" id="Question10_Option2" value="3">
-                                <label for="Question10_Option2">B. Yes,Moderately</label>
-                                <br>
-                                <input type="radio" name="Question10" id="Question10_Option3" value="2">
-                                <label for="Question10_Option3">C. Occasionally</label>
-                                <br>
-                                <input type="radio" name="Question10" id="Question10_Option4" value="1">
-                                <label for="Question10_Option4">D. Not at all</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question10" id="Question10_Option1" value="4">
+                                    <label for="Question10_Option1">A. Yes,Significantly</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question10" id="Question10_Option2" value="3">
+                                    <label for="Question10_Option2">B. Yes,Moderately</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question10" id="Question10_Option3" value="2">
+                                    <label for="Question10_Option3">C. Occasionally</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question10" id="Question10_Option4" value="1">
+                                    <label for="Question10_Option4">D. Not at all</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
-                            <h2> Do you have trouble relaxing or winding down, even when you have the opportunity to do so?</h2>
+                            <h2> Do you have trouble relaxing or winding down, even when you have the opportunity to do
+                                so?</h2>
                             <div class="options">
-                                <input type="radio" name="Question11" id="Question11_Option1" value="4">
-                                <label for="Question11_Option1">A. Always</label>
-                                <br>
-                                <input type="radio" name="Question11" id="Question11_Option2" value="3">
-                                <label for="Question11_Option2">B. Frequently</label>
-                                <br>
-                                <input type="radio" name="Question11" id="Question11_Option3" value="2">
-                                <label for="Question11_Option3">C. Occasionally</label>
-                                <br>
-                                <input type="radio" name="Question11" id="Question11_Option4" value="1">
-                                <label for="Question11_Option4">D. Rarely or never</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question11" id="Question11_Option1" value="4">
+                                    <label for="Question11_Option1">A. Always</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question11" id="Question11_Option2" value="3">
+                                    <label for="Question11_Option2">B. Frequently</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question11" id="Question11_Option3" value="2">
+                                    <label for="Question11_Option3">C. Occasionally</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question11" id="Question11_Option4" value="1">
+                                    <label for="Question11_Option4">D. Rarely or never</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2> How would you describe your ability to cope with stress or difficult situations?</h2>
                             <div class="options">
-                                <input type="radio" name="Question12" id="Question12_Option1" value="4">
-                                <label for="Question12_Option1">A. Very poor,I struggle to cope</label>
-                                <br>
-                                <input type="radio" name="Question12" id="Question12_Option2" value="3">
-                                <label for="Question12_Option2">B. Moderate, I manage but it's challenging</label>
-                                <br>
-                                <input type="radio" name="Question12" id="Question12_Option3" value="2">
-                                <label for="Question12_Option3">C. Good,I cope fairly well</label>
-                                <br>
-                                <input type="radio" name="Question12" id="Question12_Option4" value="1">
-                                <label for="Question12_Option4">D. Excellent, I handle stress effectively</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+                                    <input type="radio" name="Question12" id="Question12_Option1" value="4">
+                                    <label for="Question12_Option1">A. Very poor,I struggle to cope</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question12" id="Question12_Option2" value="3">
+                                    <label for="Question12_Option2">B. Moderate, I manage but it's challenging</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question12" id="Question12_Option3" value="2">
+                                    <label for="Question12_Option3">C. Good,I cope fairly well</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question12" id="Question12_Option4" value="1">
+                                    <label for="Question12_Option4">D. Excellent, I handle stress effectively</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2>Are you experiencing changes in your motivation levels or interest in activities?</h2>
                             <div class="options">
-                                <input type="radio" name="Question13" id="Question13_Option1" value="4">
-                                <label for="Question13_Option1">A. Drastically decreased motivation and interest</label>
-                                <br>
-                                <input type="radio" name="Question13" id="Question13_Option2" value="3">
-                                <label for="Question13_Option2">B. Moderately decreased motivation and interest</label>
-                                <br>
-                                <input type="radio" name="Question13" id="Question13_Option3" value="2">
-                                <label for="Question13_Option3">C. Slightly decreased motivation and interest</label>
-                                <br>
-                                <input type="radio" name="Question13" id="Question13_Option4" value="1">
-                                <label for="Question13_Option4">D. No noticeable changes</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question13" id="Question13_Option1" value="4">
+                                    <label for="Question13_Option1">A. Drastically decreased motivation and
+                                        interest</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question13" id="Question13_Option2" value="3">
+                                    <label for="Question13_Option2">B. Moderately decreased motivation and
+                                        interest</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question13" id="Question13_Option3" value="2">
+                                    <label for="Question13_Option3">C. Slightly decreased motivation and
+                                        interest</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question13" id="Question13_Option4" value="1">
+                                    <label for="Question13_Option4">D. No noticeable changes</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2> How is your self-esteem and self-worth?</h2>
                             <div class="options">
-                                <input type="radio" name="Question14" id="Question14_Option1" value="4">
-                                <label for="Question14_Option1">A. Very low, I feel worthless and unimportant </label>
-                                <br>
-                                <input type="radio" name="Question14" id="Question14_Option2" value="3">
-                                <label for="Question14_Option2">B. Low, I struggle with self-doubt</label>
-                                <br>
-                                <input type="radio" name="Question14" id="Question14_Option3" value="2">
-                                <label for="Question14_Option3">C. Moderate, I have moments of confidence and doubt</label>
-                                <br>
-                                <input type="radio" name="Question14" id="Question14_Option4" value="1">
-                                <label for="Question14_Option4">D. High, I generally feel good about myself</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question14" id="Question14_Option1" value="4">
+                                    <label for="Question14_Option1">A. Very low, I feel worthless and unimportant
+                                    </label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question14" id="Question14_Option2" value="3">
+                                    <label for="Question14_Option2">B. Low, I struggle with self-doubt</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question14" id="Question14_Option3" value="2">
+                                    <label for="Question14_Option3">C. Moderate, I have moments of confidence and
+                                        doubt</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question14" id="Question14_Option4" value="1">
+                                    <label for="Question14_Option4">D. High, I generally feel good about myself</label>
+                                </div>
                             </div>
                         </li>
-                        
+
                         <li>
                             <h2> Have you noticed changes in your appetite or eating habits?</h2>
                             <div class="options">
-                                <input type="radio" name="Question15" id="Question15_Option1" value="4">
-                                <label for="Question15_Option1">A. Significant decrease or increase in appetite and/or weight</label>
-                                <br>
-                                <input type="radio" name="Question15" id="Question15_Option2" value="3">
-                                <label for="Question15_Option2">B. Moderate changes in appetite and/or weight</label>
-                                <br>
-                                <input type="radio" name="Question15" id="Question15_Option3" value="2">
-                                <label for="Question15_Option3">C. Slight changes in appetite and/or weight</label>
-                                <br>
-                                <input type="radio" name="Question15" id="Question15_Option4" value="1">
-                                <label for="Question15_Option4">D. No noticeable changes</label>
-                                <br>
-                        
+
+                                <div class="radio-container">
+
+                                    <input type="radio" name="Question15" id="Question15_Option1" value="4">
+                                    <label for="Question15_Option1">A. Significant decrease or increase in appetite
+                                        and/or
+                                        weight</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question15" id="Question15_Option2" value="3">
+                                    <label for="Question15_Option2">B. Moderate changes in appetite and/or
+                                        weight</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question15" id="Question15_Option3" value="2">
+                                    <label for="Question15_Option3">C. Slight changes in appetite and/or weight</label>
+                                </div>
+                                <div class="radio-container">
+                                    <input type="radio" name="Question15" id="Question15_Option4" value="1">
+                                    <label for="Question15_Option4">D. No noticeable changes</label>
+                                </div>
                             </div>
                         </li>
-                        
-                        <li>
-                            <h2> How often do you feel overwhelming sadness or hopelessness?</h2>
-                            <div class="options">
-                                <input type="radio" name="Question1" id="Question1_Option1" value="4">
-                                <label for="Question1_Option1">A. Almost every day</label>
-                                <br>
-                                <input type="radio" name="Question1" id="Question1_Option2" value="3">
-                                <label for="Question1_Option2">B. Several days a week</label>
-                                <br>
-                                <input type="radio" name="Question1" id="Question1_Option3" value="2">
-                                <label for="Question1_Option3">C. Occasionally</label>
-                                <br>
-                                <input type="radio" name="Question1" id="Question1_Option4" value="1">
-                                <label for="Question1_Option4">D. Rarely or never</label>
-                                <br>
-                        
-                            </div>
-                        </li>
+
                     </ul>
-                    <input type="submit" value="Submit" style="padding: 10px 20px; margin-top: 50px;">
+                    <input type="submit" class="submit" value="Submit" style="padding: 10px 20px; margin-top: 50px;">
                 </form>
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const li = document.querySelectorAll('li');
+
+
+            const formd = document.querySelector('#form');
+            const demo = document.querySelector('#demo');
+            const result = document.querySelector('.result');
+            const formdata = new FormData(formd);
+            const submit = document.querySelector('.submit');
+            submit.addEventListener('click', (e) => {
+                e.preventDefault();
+                var count = 0;
+                const formdata = new FormData(formd);
+                for (const val of formdata.values()) {
+                    count = count + parseInt(val);
+                }
+                console.log(count);
+
+
+                if (count <= 10) {
+                    demo.innerHTML = `Good mental health and your result is 90%`
+                }
+                else if (count > 10 && count <= 20) {
+                    demo.innerHTML = `Good mental health  and your result is 80%`
+                }
+                else if (count > 20 && count <= 30) {
+                    demo.innerHTML = "Mild mental health concerns and your result is 70%"
+                }
+                else if (count > 30 && count <= 40) {
+                    demo.innerHTML = "Moderate mental health concerns and your result is 60%"
+                }
+                else if (count > 40 && count <= 50) {
+                    demo.innerHTML = "Severe mental health concerns and your result is 50%"
+                }
+                else {
+                    demo.innerHTML = "Critical mental health concerns and your result is 30%"
+                }
+                window.scrollTo({
+                    top : 0,
+                    behavior : 'smooth' 
+                });
+                result.style.display = 'flex';
+                setTimeout(() => {
+                    formd.reset();
+                }, 5000);
+            });
+
+
+
+        })
+    </script>
 </body>
 
 </html>

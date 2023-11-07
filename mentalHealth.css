@@ -11,8 +11,13 @@
 .header h1 {
     font-size: clamp(20px, 4vw, 50px);
     font-family: means-light;
+    text-align: center;
 }
-
+li{
+    list-style: circle;
+    margin: 20px auto;
+    
+}
 .header {
     display: flex;
     justify-content: center;
@@ -23,7 +28,7 @@
 
 .instructions {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 .instructions p{
@@ -31,8 +36,26 @@
 }
 .container {
     padding: 50px;
+    position: relative;
 }
+.result{
+    position: absolute;
+    padding: 50px;
+    height: 90vh;
+    width: 90%;
+    border-radius: 20px;
+    margin: auto;
+    background-color: lightgrey; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+h2,label{
+    font-family: graphic;
 
+}
 @media(width<600px) {
 
     h2 {
@@ -50,5 +73,8 @@
     .instructions p{
         padding: 10px;
         font-size: 12px;
+    }
+    .container{
+        padding: 20px;
     }
 }

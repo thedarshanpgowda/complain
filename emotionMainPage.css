@@ -502,12 +502,12 @@ button {
 
     .heroPageContent {
         position: relative;
-        top: -15%;
+        top: -1%;
     }
 
     .heroPageFooter {
         position: relative;
-        top: -30%;
+        top: -10%;
     }
 
     .blockforcontent img {
@@ -552,6 +552,33 @@ button {
 
     .extraMainContent {
         z-index: 4;
-        top: -20%;
+        top: 0%;
+    }
+}
+@media(width<500px){
+    .HeroContent::before {
+        content: "";
+        background-image: url('images/bgiamge1.jpg');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        object-position: center;
+        top: 0;
+        opacity: 0.9;
+        z-index: -1;
+        left: 0;
+    }
+    .mainHeroPage {
+        background: aliceblue;
+    }
+    form{
+        display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     }
 }
