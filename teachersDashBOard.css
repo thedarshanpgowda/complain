@@ -1,67 +1,96 @@
-.mainContainer {
-    display: flex;
-    width: 100vw;
+.containerMain {
+    position: relative;
     height: 100vh;
-    padding: 40px;
-}
-
-.rightcontainer {
-    width: 20%;
+    width: 98vw;
     padding: 30px;
-    background-color: aliceblue;
-    margin: 20px;
+
+}
+
+.extraContent {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: lightsteelblue;
     border-radius: 20px;
+    display: none;
+    z-index: 10;
 }
 
-.leftcontainer {
-    width: 75%;
-    padding: 30px;
-    background-color: aliceblue;
-    margin: 20px;
-    border-radius: 20px;
-
+.cancelBar {
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    z-index: 2;
 }
 
-.rightcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rightcontainer li {
-    padding: 10px;
+.cancelBar img {
+    height: 30px;
+    transform: rotate(180deg);
     cursor: pointer;
 }
 
-.rightcontainer li:hover {
-    background-color: #fff;
-}
-
-.messagesBlock {
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-}
-
-.block {
-    border: 2px black solid;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.footerBlock {
+.mainContainer {
     display: flex;
-    margin-top: 10px;
     justify-content: space-between;
 }
 
-.replyButton button {
-    padding: 10px;
-    color: blue;
-    background-color: transparent;
+.rightcontainer {
+    width: 70%;
+    margin-left: 30%;
 }
 
-.replyButton img {
+.leftcontainer {
+    width: 25%;
+    height: 90vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+    background-color: lightsteelblue;
+    border-radius: 20px;
+}
+
+.container ul li {
+    padding: 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.container ul li:hover {
+    background-color: aliceblue;
+    color: #2196f3;
+}
+
+
+
+.messagesBlock {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+
+.block {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px white;
+}
+
+.block img {
     height: 20px;
 }
 
@@ -70,7 +99,16 @@
     justify-content: center;
     align-items: center;
 }
-.header{
-    padding: 10px;
-  text-align: center;
+
+.footerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.replyButton button {
+    padding: 8px 15px;
+    background-color: #2196f3;
+    margin-left: 10px;
+
 }
