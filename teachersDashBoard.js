@@ -1,32 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const a = async () => {
-    // const p = await fetch('https://api.imgflip.com/get_memes');
-
-    const p = await fetch("https://api.breakingbadquotes.xyz/v1/quotes/500");
-
-
-    const k = await p.json();
-    console.log(k)
-
-    return k;
+  const FetchapiFunction = async () => {
+    const response = await fetch("https://api.breakingbadquotes.xyz/v1/quotes/500");
+    const data = await response.json();
+    // console.log(data);
+    return data;
   };
-  const messagesBlock = document.querySelector(".messagesBlock");
 
-  const nt = async () => {
-    const arr = await a();
-    // console.log(arr)
-    arr.forEach((element) => {
+
+  const messagesBlock = document.querySelector(".messagesBlock");
+  const mainFunction = async () => {
+    const dataObj = await FetchapiFunction();
+    dataObj.forEach((each_object) => {
       const date = new Date();
 
-      // console.log(element.quote + " " + element.author)
-      const div = document.createElement("div");
-      div.classList.add("block");
-      div.innerHTML = `<div>
+      const div_block = document.createElement("div");
+      div_block.classList.add("block");
+      div_block.innerHTML = `<div>
                                 <div class="name">
-                                    <p>${element.author}</p>
+                                    <p>${each_object.author}</p>
                                 </div>
                                 <div class="content">
-                                    ${element.quote}
+                                    ${each_object.quote}
                                 </div>
                                 <div class="footerBlock">
                                     <div class="date">${date.getMilliseconds()}</div>
@@ -38,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     </div>
                                 </div>
                             </div>`;
-      messagesBlock.appendChild(div);
+      messagesBlock.appendChild(div_block);
     });
 
     const cancelBar = document.querySelector(".cancelBar");
@@ -49,19 +43,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const replyButton = document.querySelectorAll(".replyButton");
     console.log(replyButton.length);
     replyButton.forEach((replybtn) => {
-      replybtn.addEventListener("click", () => {
-        const question = document.getElementById('question');
-        const s = replybtn.parentNode.previousSibling
-        question.innerHTML = s;
-        extraContent.style.display = "block";
+      replybtn.addEventListener("click", (e) => {
 
+        const question = document.getElementById("question");
+        let questionBlock = e.target.closest('.block').querySelector('.content').innerHTML;
+        // console.log(questionBlock)
+        question.innerHTML = questionBlock;
+        extraContent.style.display = "flex";
       });
     });
+
     setInterval(() => {
       const date = new Date();
       const dateblock = document.getElementById("date");
       dateblock.innerHTML = date;
     }, 900);
   };
-  nt();
+  mainFunction();
+  const menubar = document.querySelector('.menubar');
+  const leftContainer = document.querySelector('.leftcontainer');
+  menubar.addEventListener('click',()=>{
+    leftContainer.classList.toggle('visibleContainer');
+  })
+
+
+
 });

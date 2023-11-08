@@ -19,6 +19,13 @@ body {
     height: 100%;
 }
 
+#currentStreak {
+    margin-top: 20px;
+}
+#currentStreak img {
+    height: 20px;
+    transform: translateY(14%);
+}
 
 body::before {
     content: "";
@@ -148,7 +155,7 @@ body::before {
 .mainBody {
     padding: 10px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 2px;
 }
 
 .mainBody h2 {
@@ -235,7 +242,10 @@ body::before {
     height: 70px;
     cursor: pointer;
 }
+.options{
+    text-align: initial;
 
+}
 .emojis label::before {
     content: "";
     height: 15px;
@@ -335,12 +345,12 @@ input[type="submit"] {
 
 @media screen and (max-width: 690px) {
     .NameCredentials {
-        flex-direction: row;
+        flex-direction: column;
         margin: 15px 0px;
     }
 
     .body_content {
-        padding: 20px;
+        padding: 5px;
     }
 
     .menubar {
@@ -352,7 +362,7 @@ input[type="submit"] {
         position: absolute;
         z-index: 1;
         background: aliceblue;
-        width: 92vw;
+        width: 98vw;
         height: 100vh;
         margin-top: -209%;
         margin: -259% auto 0% auto;
@@ -413,6 +423,7 @@ input[type="submit"] {
     .emojis img {
         height: 30px;
     }
+
     .navigationBar {
         transform: translateY(60%);
     }

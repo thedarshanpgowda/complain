@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tracking Emotion</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="emotion.css">
-    <style>
-        .DashboardContainer{
-            height: 100vh;
-        }
-    </style>
+    <link rel="stylesheet" href="emotionHistory.css">
 </head>
+
 <body>
     <div class="body_content">
         <div class="menubar">
@@ -23,13 +21,217 @@
                     <h1>Emotional Tracking</h1>
                 </div>
                 <ul class="navigationBar">
-                    <li class="active">HOME</li>
-                    <li class="active">HISTORY</li>
+                    <li><a href="emotionalTracker.html">HOME</a></li>
+                    <li class="active"><a href="studentDashboard.html">HISTORY</a></li>
                     <li>ANALYTICS</li>
                 </ul>
             </div>
+            <div class="container">
+                <div class="credentials">
+                    <ul>
+                        <li><span>Date</span> : <span id="date"></span></li>
+                    </ul>
+                    <ul class="NameCredentials">
+                        <li><span>Name</span> : Darshan SP</li>
+                        <li><span>Mentor</span> : Mithun Gowda</li>
+                    </ul>
+                    <div id="currentStreak">
+                        Your Current Streak is : <span id="streak">5 <img
+                                src="https://cdn-icons-png.flaticon.com/128/7299/7299732.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="mainBody">
+                    <div class="question">
+                        <b>Your Emotions in the past week is as follows:</b>
+                    </div>
+                    <div class="innerbox">
+                        <div class="column column1">
+                            <div class="dayDate">
+                                <p id="date">23:10:2023</p>
+                                <p id="day">Sunday</p>
+                            </div>
+                            <div class="mooods">
+                                <div class="morning">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Morning</figcaption>
+
+                                </div>
+                                <div class="afternoon">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Afternoon</figcaption>
+
+                                </div>
+                                <div class="evening">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Evening</figcaption>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column1">
+                            <div class="dayDate">
+                                <p id="date">23:10:2023</p>
+                                <p id="day">Monday</p>
+                            </div>
+                            <div class="mooods">
+                                <div class="morning">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Morning</figcaption>
+
+                                </div>
+                                <div class="afternoon">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Afternoon</figcaption>
+
+                                </div>
+                                <div class="evening">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Evening</figcaption>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column1">
+                            <div class="dayDate">
+                                <p id="date">23:10:2023</p>
+                                <p id="day">Tuesday</p>
+                            </div>
+                            <div class="mooods">
+                                <div class="morning">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Morning</figcaption>
+
+                                </div>
+                                <div class="afternoon">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Afternoon</figcaption>
+
+                                </div>
+                                <div class="evening">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Evening</figcaption>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column1">
+                            <div class="dayDate">
+                                <p id="date">23:10:2023</p>
+                                <p id="day">Wednesday</p>
+                            </div>
+                            <div class="mooods">
+                                <div class="morning">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Morning</figcaption>
+
+                                </div>
+                                <div class="afternoon">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Afternoon</figcaption>
+
+                                </div>
+                                <div class="evening">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Evening</figcaption>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column1">
+                            <div class="dayDate">
+                                <p id="date">23:10:2023</p>
+                                <p id="day">Thursday</p>
+                            </div>
+                            <div class="mooods">
+                                <div class="morning">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Morning</figcaption>
+
+                                </div>
+                                <div class="afternoon">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Afternoon</figcaption>
+
+                                </div>
+                                <div class="evening">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Evening</figcaption>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column1">
+                            <div class="dayDate">
+                                <p id="date">23:10:2023</p>
+                                <p id="day">Friday</p>
+                            </div>
+                            <div class="mooods">
+                                <div class="morning">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Morning</figcaption>
+
+                                </div>
+                                <div class="afternoon">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Afternoon</figcaption>
+
+                                </div>
+                                <div class="evening">
+                                    <figure>
+                                        <img src="https://cdn-icons-png.flaticon.com/128/166/166538.png" alt="">
+                                    </figure>
+                                    <figcaption>Evening</figcaption>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="viewMoreButton">
+                        <button>Veiw More</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     </div>
-    
+    <script src="emotion.js"></script>
 </body>
+
 </html>

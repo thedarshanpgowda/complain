@@ -6,6 +6,12 @@
 
 }
 
+#question {
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 400;
+}
+
 .extraContent {
     height: 95%;
     width: 95%;
@@ -13,10 +19,41 @@
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    background-color: lightsteelblue;
+    background-color: #dedede;
     border-radius: 20px;
     display: none;
     z-index: 10;
+    
+}
+
+.extraContent {
+    flex-direction: column;
+}
+
+textarea {
+    width: 90%;
+    /* margin: 20px 35px; */
+    padding: 20px;
+    height: 50vh;
+    position: relative;
+    left: 50%;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    outline: none;
+    border: none;
+}
+
+.replyBlock {
+    position: relative;
+    top: 9%;
+
+}
+
+.extraContent input[type="submit"]{
+    display: block;
+    margin: 50px auto;
+    padding: 10px 20px;
+    color: black;
 }
 
 .cancelBar {
@@ -70,7 +107,8 @@
     cursor: pointer;
 }
 
-.container ul li:hover {
+.container ul li:hover,
+.active {
     background-color: aliceblue;
     color: #2196f3;
 }
@@ -111,4 +149,82 @@
     background-color: #2196f3;
     margin-left: 10px;
 
+}
+
+.menubar {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.menubar img {
+    /* transform: rotate(180deg); */
+    height: 30px;
+}
+
+@media(width < 700px) {
+    .containerMain {
+        padding: 3px;
+    }
+
+    .header {
+        margin: 0;
+    }
+
+    .container {
+        padding: 3px;
+    }
+
+    ul li {
+        font-size: 13px;
+    }
+
+    #question {
+        font-size: 19px;
+        padding: 15px;
+    }
+}
+
+@media(width < 520px) {
+    .mainContainer {
+        position: relative;
+        top: 13%;
+    }
+
+   
+
+    .menubar {
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .leftcontainer {
+        margin-top: -200%;
+        transition: all 0.6s ease-in;
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50vh;
+        border: 1px black solid;
+    }
+    .visibleContainer {
+        margin-top: 0%;
+    }
+    ul li {
+        text-align: center;
+    }
+
+    .container ul {
+        position: relative;
+        top: -16%;
+    }
+
+    .rightcontainer {
+        margin: 10px;
+        width: 100%;
+        padding-top: 80px;
+    }
 }
