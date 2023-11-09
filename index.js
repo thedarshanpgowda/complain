@@ -22,7 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
       anchor.style.color = "black";
     });
   });
+
+  const bar = document.querySelectorAll('.bar');
+  const currentBar = bar.querySelector('.bar2');
   
+
 
   
 });

@@ -588,4 +588,28 @@ button {
         justify-content: center;
         align-items: center;
     }
+    .profile img{
+        height: 60px;
+    }
+    .innerLoginContent h2{
+        font-size: 16px;
+    }
+    .cancelBar img, .cancelSignupBar img
+    {
+        height: 23px;
+    }
+    .loginPage,
+    .SignupPage{
+        background-color: #d8e1eb;
+    }
+    .blockforlogin {
+        padding: 5px 11px;
+        width: 250px;
+    }
+    .blockForSubmit {
+        background-color: transparent;
+    }
+    input[type='submit']{
+        border-radius: 10px;
+    }
 }

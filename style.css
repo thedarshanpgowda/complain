@@ -43,7 +43,7 @@ body {
     display: flex;
     align-items: center;
     /* justify-content: flex-end; */
-    height: 82vh;
+    height: 90vh;
     /* border: 2px red solid; */
     padding: 0px 50px;
     flex-direction: column;
@@ -70,7 +70,9 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    border: 2px red solid;
+    overflow: auto;
+    width: 864px;
 }
 
 .bar {
@@ -95,6 +97,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .bar1,
@@ -358,10 +361,20 @@ body {
         margin: 10px;
     }
 
-    .bar1,
-    .bar3 {
+    .callToAction {
+        width: 320px;
+        padding: 20px;
+        height: 320px;
+    }
+
+    .callToAction::-webkit-scrollbar {
         display: none;
     }
+
+    .bar {
+        height: 270px;
+    }
+
 }
 
 @media(width <=698px) {

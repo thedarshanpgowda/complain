@@ -32,10 +32,12 @@
         41.8px 41.8px 33.4px rgba(0, 0, 0, 0.079),
         100px 100px 80px rgba(0, 0, 0, 0.07);
 }
+
 #currentStreak {
     margin-top: 20px;
     text-align: center;
-  }
+}
+
 .dayDate {
     display: flex;
     justify-content: space-between;
@@ -82,14 +84,73 @@ figcaption {
     color: black;
 }
 
+.Weeklymorning,
+.Weeklyafternoon,
+.Weeklyevening {
+    overflow: hidden;
+    position: relative;
+}
+
+figure,
+figcaption {
+    z-index: 1;
+}
+
+.Weeklymorning::after,
+.Weeklyafternoon::after,
+.Weeklyevening::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    z-index: 0;
+    display: block;
+    position: absolute;
+    left: 0%;
+}
+
+.Weeklyafternoon::after {
+    width: 10%;
+    background-color: lightslategray;
+}
+
+.Weeklyevening::after {
+    width: 80%;
+    background-color: lightsalmon;
+}
+
+.WeeklyDate {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Weeklycolumn {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.weeklyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media(width<900px) {
     .innerbox {
         grid-template-columns: repeat(2, 47%);
     }
-    .dayDate{
+
+    .dayDate {
         flex-direction: column;
     }
-} 
+}
+
 @media(width<700px) {
     .container {
         width: 100%;
@@ -101,7 +162,22 @@ figcaption {
         display: grid;
         grid-template-columns: repeat(1, 80%);
     }
-    .dayDate{
+
+    .dayDate {
         flex-direction: row;
+    }
+}
+
+@media(width<500px) {
+    .Weeklycolumn {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
     }
 }

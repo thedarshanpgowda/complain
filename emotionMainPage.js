@@ -81,4 +81,17 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonSignup.addEventListener("click", () => {
     SignupPage.style.display = "flex";
   });
+
+
+  const myPassword = document.querySelector('input[type="password"]');
+  const myEmail = document.querySelector('input[type="email"]');
+  const submit = document.getElementById('submit');
+  submit.addEventListener('click',()=>{
+    event.preventDefault();
+    if(myEmail.value == 'sdarshanpgowda2003@gmail.com' && myPassword.value == '8431676017')
+    {
+      window.location = 'https://thedarshanpgowda.github.io/complain/emotionalTracker.html'
+    }
+  })
+
 });

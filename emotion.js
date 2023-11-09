@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     date.innerHTML = `${hour} : ${min} :${sec}`;
   }, 1000);
 
+
   const morning = document.querySelector(".col1");
   const happymorning = morning.querySelector(".reasons-for-happiness");
   const sadmorning = morning.querySelector(".reasons-for-sadness");
@@ -178,4 +179,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+
+
+
 });
