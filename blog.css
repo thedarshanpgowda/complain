@@ -131,7 +131,7 @@ body::after {
 }
 
 .innerHeroContentBlog h1 {
-    color: #ff0000bf;
+    color: #EDEddd;
     font-weight: 400;
     text-align: center;
 }
@@ -209,7 +209,9 @@ body::after {
 .blog:nth-last-child(3) {
     grid-row: span 2;
 }
-
+pre span{
+    text-transform: uppercase;
+}
 
 
 

@@ -2,6 +2,10 @@
     font-family: header;
     src: url('Fruits\ Delight.otf');
 }
+@font-face {
+    font-family: Longsile;
+    src: url('Longsile.ttf');
+}
 
 * {
     /* border: 2px red solid; */
@@ -37,6 +41,7 @@ body {
     font-family: header;
     text-align: right;
     margin-top: 25px;
+
 }
 
 .heropageContainer {
@@ -80,7 +85,7 @@ body {
 .bar {
     background-color: #fff;
     margin: 0px 10px;
-    width: 300px;
+    width: 275px;
     background: rgba(255, 255, 255, 0.55);
     -webkit-backdrop-filter: blur(19px);
     backdrop-filter: blur(19px);
@@ -102,18 +107,21 @@ body {
     flex-shrink: 0;
     height: 200px;
 }
-.bar2{
+
+.bar2 {
     background-color: aliceblue;
 }
-.bar2 img{
+
+.bar2 img {
     height: 70px;
 }
-.testimonalsBlock{
-    text-align: center;
-  border: 0.2px black solid;
-  border-radius: 20px;
 
+.testimonalsBlock {
+    text-align: center;
+    border: 0.2px black solid;
+    border-radius: 20px;
 }
+
 .bar1,
 .bar3 {
     width: 250px;
@@ -131,7 +139,10 @@ body {
 .heading h1 {
     text-align: center;
 }
+.headerBlock{
+    font-family: Longsile;
 
+}
 .servicesContainer {
     display: flex;
     justify-content: center;
@@ -345,9 +356,10 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
-.mentalHealthImg img{
+
+.mentalHealthImg img {
     /* border-radius: 50%; */
-    height: 150px;    
+    height: 150px;
 }
 
 @media(width<=1050px) {
@@ -369,10 +381,15 @@ body {
 
     .callToAction {
         width: 320px;
-        padding: 20px;
+        padding: 0px;
+        scroll-snap-type: x mandatory;
         height: 320px;
     }
 
+    .bar{
+        scroll-snap-align:center ;
+        /* margin-left: 5px; */
+    }
     .callToAction::-webkit-scrollbar {
         display: none;
     }
@@ -422,10 +439,13 @@ body {
 
 }
 
-@media(width < 500px) {
+@media only screen and (max-width: 500px) {
 
     .heropageContainer {
         height: 120vh;
+    }
+    .bar12{
+        display: none;
     }
 
     .servicesImage {
@@ -434,6 +454,11 @@ body {
 
     .heading {
         margin-top: 20px;
+    }
+
+    .servicesContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
     }
 
     .service {
