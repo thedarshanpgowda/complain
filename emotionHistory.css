@@ -181,3 +181,9 @@ figcaption {
         padding: 10px;
     }
 }
+.additionalInfo{
+    display: none;
+}
+.additionalInfoShow{
+    display: block;
+}

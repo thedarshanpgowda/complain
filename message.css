@@ -101,7 +101,7 @@ input[type="submit"] {
 
 .extra {
     position: absolute;
-    bottom: 10%;
+    bottom: 1%;
     right: -200%;
     /* right: 5%; */
     display: flex;
@@ -182,7 +182,7 @@ input[type="submit"] {
 
 @media(width < 700px) {
     body {
-        padding: 20px;
+        padding: 5px;
     }
 
     .span {
@@ -201,6 +201,24 @@ input[type="submit"] {
 
     select,
     input[type="text"] {
-        width: 240px;
+        width: 100%;
+    }
+    .message p{
+        font-size: 10px;
+    }
+    .main_name{
+        padding: 6px;
+        font-size: 13px;
+    }
+    .extra_content{
+        padding: 2px;
+        height: 150px;
+        width: 220px;
+    }
+    select, input[type="text"] {
+        width: 190px;
+    }
+    textarea{
+        height: 100px;
     }
 }

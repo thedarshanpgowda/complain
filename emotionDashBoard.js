@@ -49,12 +49,28 @@ let nightMood = [
   const titleA = document.querySelectorAll(".afternoon");
   const titleE = document.querySelectorAll(".evening");
   titleM.forEach((element, index) => {
-    element.setAttribute("title", happyMood[index]);
-  });
-  titleA.forEach((element, index) => {
-    element.setAttribute("title", sadMood[index]);
-  });
-  titleE.forEach((element, index) => {
-    element.setAttribute("title", nightMood[index]);
-  });
+      element.setAttribute("title", happyMood[index]);
+    });
+    titleA.forEach((element, index) => {
+        element.setAttribute("title", sadMood[index]);
+    });
+    titleE.forEach((element, index) => {
+        element.setAttribute("title", nightMood[index]);
+    });
+    
+
+    const Viewmore = document.querySelector(".Viewmore");
+    Viewmore.addEventListener('click',()=>{
+        const additionalInfo = document.querySelector(".additionalInfo");
+        additionalInfo.classList.toggle('additionalInfoShow');
+        const k = 'view less'
+        if(Viewmore.innerHTML == 'Veiw More'){
+            Viewmore.innerHTML = k;
+        }
+        else{
+            Viewmore.innerHTML = 'Veiw Less';
+        }
+       
+
+    });
 });
