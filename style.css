@@ -13,7 +13,7 @@ body {
 
 /* .heropageContainer::after {
     content: "";
-    background-image: url('images/images11.jpeg');
+    background-image: url('images/bgimage9.jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -48,7 +48,7 @@ body {
     padding: 0px 50px;
     flex-direction: column;
     background-color: #c7c7c7;
-
+    position: relative;
 }
 
 .para {
@@ -70,9 +70,11 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     overflow: auto;
     width: 864px;
+    height: 250px;
+    padding: 25px 0px;
 }
 
 .bar {
@@ -98,30 +100,26 @@ body {
     align-items: center;
     text-align: center;
     flex-shrink: 0;
+    height: 200px;
 }
+.bar2{
+    background-color: aliceblue;
+}
+.bar2 img{
+    height: 70px;
+}
+.testimonalsBlock{
+    text-align: center;
+  border: 0.2px black solid;
+  border-radius: 20px;
 
+}
 .bar1,
 .bar3 {
     width: 250px;
     height: 200px;
 }
 
-.bar2 {
-    height: 250px;
-    box-shadow:
-        3.8px 3.5px 43.2px rgba(0, 0, 0, 0.036),
-        9.7px 8.9px 96.1px rgba(0, 0, 0, 0.062),
-        19.8px 18.1px 210px rgba(0, 0, 0, 0.084),
-        40.9px 37.2px 293.2px rgba(0, 0, 0, 0.109),
-        112px 102px 342px rgba(0, 0, 0, 0.16);
-}
-
-.bar2 button {
-    padding: 10px 20px;
-    margin-top: 30px;
-    border: #000 1px solid;
-
-}
 
 .servicesMainPage {
     margin-top: 50px;
@@ -343,6 +341,14 @@ body {
     height: 300px;
 }
 
+.mentalHealthImg {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.mentalHealthImg img{
+    /* border-radius: 50%; */
+    height: 150px;    
+}
 
 @media(width<=1050px) {
     .quoteMaster img {
