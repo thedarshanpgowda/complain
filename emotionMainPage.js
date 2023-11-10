@@ -86,12 +86,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const myPassword = document.querySelector('input[type="password"]');
   const myEmail = document.querySelector('input[type="email"]');
   const submit = document.getElementById('submit');
-  submit.addEventListener('click',()=>{
+  submit.addEventListener('click',(event)=>{
     event.preventDefault();
     if(myEmail.value == 'sdarshanpgowda2003@gmail.com' && myPassword.value == '8431676017')
     {
       window.location = 'https://thedarshanpgowda.github.io/complain/emotionalTracker.html'
     }
+    if(myEmail.value == 'mithungowdahc12a@gmail.com' && myPassword.value == '8431676017')
+    {
+      window.location = 'https://thedarshanpgowda.github.io/complain/teachersDashBOard.html'
+    }
+    else{
+      SignupPage.style.display = 'flex'
+      Signupcontent = SignupPage.querySelector('.login');
+      Signupcontent.innerHTML = "You are not eligible to proceed further, if you're email is not registered, continue further by signing-up using your email-ID"
+    }
+    
   })
 
 });

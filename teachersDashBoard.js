@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     ${each_object.quote}
                                 </div>
                                 <div class="footerBlock">
-                                    <div class="date">${date.getMilliseconds()}</div>
+                                    <div class="date">${date.getDate()-2} / ${date.getMonth()} / ${date.getFullYear()}</div>
                                     <div class="reply">
                                         <a href="#" class="replyButton">
                                             <img src="https://cdn-icons-png.flaticon.com/128/1933/1933008.png" alt="">

@@ -340,5 +340,9 @@ pre span{
     .blog:nth-last-child(3) .blogInnerContent2 {
         display: none;
     }
+    .innerHeroContentBlog p{
+        padding: 10px  3px;
+        text-align: justify;
+    }
 
 }

@@ -415,7 +415,7 @@ body {
         margin-bottom: 0px;
 
     }
-
+    
     .servicesContainer {
         padding: 25px;
     }
@@ -444,7 +444,8 @@ body {
     .heropageContainer {
         height: 120vh;
     }
-    .bar12{
+    .bar12,
+    .headerBlock{
         display: none;
     }
 
