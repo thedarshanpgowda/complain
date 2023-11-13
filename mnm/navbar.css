@@ -18,7 +18,7 @@
 
 .mainNavbarContainer {
     padding: 30px;
-    background-color: #c7c7c7;
+    background-color: transparent;
 }
 
 .navbar {
@@ -42,7 +42,7 @@
 }
 
 .navigationBar img {
-    height: 20px;
+    height: 15px;
     filter: invert(0);
 }
 

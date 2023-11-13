@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       window.location = 'https://thedarshanpgowda.github.io/complain/teachersDashBOard.html'
     }
-    else{
+    else if((myEmail.value == 'sdarshanpgowda2003@gmail.com' && myPassword.value == '8431676017') || (myEmail.value == 'mithungowdahc12a@gmail.com' && myPassword.value == '8431676017')){
       SignupPage.style.display = 'flex'
       Signupcontent = SignupPage.querySelector('.login');
       Signupcontent.innerHTML = "You are not eligible to proceed further, if you're email is not registered, continue further by signing-up using your email-ID"
