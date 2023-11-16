@@ -1,0 +1,189 @@
+.DashboardContainer {
+    height: 90vh;
+    position: fixed;
+
+}
+
+.container {
+    margin-left: 25%;
+    background-color: #daddd8cf;
+}
+
+.innerbox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+
+.column {
+    height: auto;
+    width: auto;
+    border: 2px aliceblue solid;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #eef0f2;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.071),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.086),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.089),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.086),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.079),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+#currentStreak {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dayDate {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #daddd8;
+    border-radius: 4px;
+}
+
+#day,
+#date {
+    text-align: center;
+}
+
+.morning,
+.afternoon,
+.evening {
+    display: flex;
+    align-items: center;
+    border: 1px #1c1c1d solid;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+figcaption {
+    margin-left: 25px;
+}
+
+.mooods img {
+    height: 30px;
+    transform: translateY(12%);
+    position: relative;
+    top: 50%;
+
+}
+
+.viewMoreButton button {
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    color: black;
+}
+
+.Weeklymorning,
+.Weeklyafternoon,
+.Weeklyevening {
+    overflow: hidden;
+    position: relative;
+}
+
+figure,
+figcaption {
+    z-index: 1;
+}
+
+.Weeklymorning::after,
+.Weeklyafternoon::after,
+.Weeklyevening::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    z-index: 0;
+    display: block;
+    position: absolute;
+    left: 0%;
+}
+
+.Weeklyafternoon::after {
+    width: 10%;
+    background-color: lightslategray;
+}
+
+.Weeklyevening::after {
+    width: 80%;
+    background-color: lightsalmon;
+}
+
+.WeeklyDate {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Weeklycolumn {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.weeklyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(width<900px) {
+    .innerbox {
+        grid-template-columns: repeat(2, 47%);
+    }
+
+    .dayDate {
+        flex-direction: column;
+    }
+}
+
+@media(width<700px) {
+    .container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .innerbox {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 80%);
+    }
+
+    .dayDate {
+        flex-direction: row;
+    }
+}
+
+@media(width<500px) {
+    .Weeklycolumn {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+.additionalInfo{
+    display: none;
+}
+.additionalInfoShow{
+    display: block;
+}

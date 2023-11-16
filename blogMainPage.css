@@ -49,7 +49,7 @@ body {
     top: 25%;
     left: 50%;
     transform: translateX(-50%);
-   
+
 }
 
 .quote {
@@ -61,7 +61,8 @@ body {
     font-weight: 600;
     font-size: 20px;
 }
-.inner-content1{
+
+.inner-content1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,20 +71,22 @@ body {
 
 }
 
-.inner-content2{
+.inner-content2 {
     padding-top: 100px;
 
 }
-.innerContentContext{
+
+.innerContentContext {
     display: flex;
     padding: 20px 0px;
     justify-content: center;
     align-items: center;
 }
 
-.inner-content2 img{
+.inner-content2 img {
     height: 300px;
 }
+
 .content1 p::first-letter {
     font-size: 30px;
 }
@@ -170,27 +173,30 @@ span {
     padding: 20px;
 }
 
-.content2 .question h3{
+.content2 .question h3 {
     text-align: left;
 }
 
 @media(width < 1000px) {
-    .inner-content2 img{
+    .inner-content2 img {
         height: 200px;
     }
 
-    .container{
+    .container {
         margin: 50px;
     }
 }
+
 @media(width < 700px) {
-    .inner-content2{
+    .inner-content2 {
         padding-top: 10px;
     }
-    .innerContentContext{
+
+    .innerContentContext {
         padding: 10px;
         flex-direction: column;
     }
+
     .blockForQuote {
         padding: 20px;
         height: auto;
@@ -225,17 +231,140 @@ span {
         padding: 8px 21px;
         font-size: 13px;
     }
-    ul{
+
+    ul {
         padding: 20px;
     }
 }
 
 
-@media(width<500px){
-      .container{
+@media(width<500px) {
+    .container {
         padding: 20px;
         position: relative;
         z-index: 2;
         transform: translateY(-10%);
-      }
+    }
+}
+
+.innerContainerTestimonals {
+    padding: 50px;
+    margin: 50px;
+}
+
+
+form {
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer img {
+    height: 50px;
+}
+
+input {
+    padding: 10px 30px;
+    margin: 10px 30px 0px;
+    width: 70%;
+    background-color: #e6ddde;
+    border: none;
+    outline: none;
+    border-bottom: 1px black solid;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px black solid;
+}
+
+.person {
+    /* display: flex; */
+    width: 90%;
+    margin: 50px 30px;
+    padding: 15px;
+    /* justify-content: space-between; */
+}
+
+.person img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.personComment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    padding: 0px 20px;
+    margin: 0px 0px 0px 50px;
+}
+
+.innerComment {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.innerAccessories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin-top: 20px;
+}
+
+.likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.likes img {
+    height: 20px;
+
+}
+
+.likes {
+    position: relative;
+    cursor: pointer;
+}
+
+.likeAfter {
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.likesCount p {
+    display: inline;
+}
+
+.mainContentComment {
+    display: flex;
+}
+
+.secondaryComment {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.person2{
+    margin: 50px 50px 50px 130px;
 }

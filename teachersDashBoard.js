@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     const replyButton = document.querySelectorAll(".replyButton");
     console.log(replyButton.length);
+    
     replyButton.forEach((replybtn) => {
       replybtn.addEventListener("click", (e) => {
 
