@@ -67,6 +67,9 @@ input[type="submit"]{
 .extracontent{
     background-color: aliceblue;
 }
+.mainNavbarContainer{
+    background: #c7c7c7;
+}
 @media(width<800px){
     .ourInfo{
         flex-direction: column;

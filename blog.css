@@ -237,7 +237,9 @@ pre span{
     height: 300px;
 }
 
-
+.mainNavbarContainer{
+    background: rgba(0,0,0,0);
+}
 
 @media(width <=698px) {
 
