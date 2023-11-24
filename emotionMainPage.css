@@ -5,11 +5,12 @@
 
 body {
     background-color: #301E00;
+    /* overflow: hidden; */
 }
 
 .innerContainer {
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
 }
 
 .container {
@@ -203,6 +204,7 @@ input:not(input[type="checkbox"]) {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
 .heroPageContent {
@@ -557,6 +559,7 @@ button {
     .extraMainContent {
         z-index: 4;
         top: 0%;
+        width: 100vw;
     }
 }
 
@@ -579,7 +582,7 @@ button {
     }
 
     .mainHeroPage {
-        background: floralwhite;
+        background: #fffaf09c;
     }
 
     form {

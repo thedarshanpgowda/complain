@@ -1,3 +1,8 @@
+@font-face {
+    font-family: means;
+    src: url('Means-Light-Web.7121f5d6.1.woff2');
+}
+
 body {
     background-color: #ededed;
     height: 100vh;
@@ -109,6 +114,7 @@ input[type="submit"] {
     transition: 0.6s ease;
     overflow: hidden;
 }
+
 .extra_content {
     position: relative;
     right: -6px;
@@ -144,7 +150,7 @@ input[type="submit"] {
     border-style: solid;
     z-index: -2;
     border-width: 15px 0px 15px 11px;
-    border-color: transparent  transparent transparent #000a;
+    border-color: transparent transparent transparent #000a;
     right: 45px;
 }
 
@@ -195,6 +201,17 @@ input[type="submit"] {
         width: 76px;
     }
 
+    .primary_body_content {
+        padding: 30px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: means;
+
+    }
+
     .input {
         margin-left: 0px;
     }
@@ -203,22 +220,32 @@ input[type="submit"] {
     input[type="text"] {
         width: 100%;
     }
-    .message p{
+
+    .message p {
         font-size: 10px;
     }
-    .main_name{
+
+    .main_name {
         padding: 6px;
         font-size: 13px;
     }
-    .extra_content{
+
+    .extra_content {
         padding: 2px;
         height: 150px;
         width: 220px;
     }
-    select, input[type="text"] {
+
+    .extra {
+        display: none;
+    }
+
+    select,
+    input[type="text"] {
         width: 190px;
     }
-    textarea{
+
+    textarea {
         height: 100px;
     }
 }

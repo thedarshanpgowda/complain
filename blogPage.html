@@ -9,11 +9,17 @@
     <link rel="stylesheet" href="blogMainPage.css">
     <style>
         .heading::before {
-            background-image: url('/mnm/images/bgimage0.jpg');
+            background-image: url('/images/bgimage0.jpg');
         }
 
         .blockForQuote {
             top: 17%;
+        }
+
+        @media(width<500px) {
+            .blockForQuote {
+                top: -12%;
+            }
         }
     </style>
 </head>
@@ -204,21 +210,21 @@
             const secondaryComment = document.querySelectorAll('.secondaryComment');
             const person = document.querySelector('.person');
 
-            likeBefore.forEach((element,i)=>{
-                element.addEventListener('click',()=>{
+            likeBefore.forEach((element, i) => {
+                element.addEventListener('click', () => {
                     likeAfter[i].style.display = 'block';
                     let mainContentComment = element.closest('.mainContentComment');
                     let k = mainContentComment.querySelector('.likeAfter');
                 })
             })
-            likeAfter.forEach((element,i)=>{
-                element.addEventListener('click',()=>{
+            likeAfter.forEach((element, i) => {
+                element.addEventListener('click', () => {
                     likeAfter[i].style.display = 'none';
                 })
             })
 
-            reply.forEach(element =>{
-                element.addEventListener('click',(event)=>{
+            reply.forEach(element => {
+                element.addEventListener('click', (event) => {
                     event.preventDefault();
                     secondaryComment.style.display = 'flex';
                 })
@@ -229,7 +235,7 @@
 
 
 
-          
+
 
 
 

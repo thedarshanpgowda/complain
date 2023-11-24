@@ -5,8 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function reload() {
     console.log("hiii");
     const faculties = {
-      other: [],
+      other: [
+        "Select the Faculty",
+      ],
       cse: [
+        "Select the Faculty",
         "Dr. Ramesh B",
         "Dr. GeethaKiran A",
         "Mr. Neelakantappa B B",
@@ -41,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Ms. Shruthi K R",
       ],
       me: [
+        "Select the Faculty",
         "Dr. Ezhil Vannan S",
         "Dr. Laxmana Naik L",
         "G.C. Gopalakrishna",
@@ -78,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
 
       ce: [
+        "Select the Faculty",
         "Dr. Mohan Kumar Chavan",
         "Dr. A. J. Krishnaiah",
         "S. B. Devaraj",
@@ -107,6 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Dr.M.T.Venuraju",
       ],
       eee: [
+        "Select the Faculty",
         "Dr. Rajanna S.",
         "Dr. N. S. Jyothi",
         "Mr. L. Kumaraswamy",
@@ -130,6 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "G K MOHAN",
       ],
       au: [
+        "Select the Faculty",
         "Dr. M.K.Ravishankar",
         "Dr. A.N.Basavaraju",
         "Dr. Y. M. Shashidhara",
@@ -138,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "R.Vijay",
       ],
       ece: [
+        "Select the Faculty",
         "Mr.Raghuram K A",
         "Manasa H S",
         "Kavana K V",
@@ -161,6 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Dr. Murthi Mahadeva Naik",
       ],
       eie: [
+        "Select the Faculty",
         "Dr. C. S. Suresh Babu",
         "Prof. N.E Ramesh",
         "Prof. Vanitha A",
@@ -170,6 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Dr. C M Naveen Kumar",
       ],
       ise: [
+        "Select the Faculty",
         "Dr. Chandrika.J",
         "Dr. Ananda Babu J",
         "Dr. Balaji Prabhu B V",
@@ -185,8 +195,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "Ms. Tasmiya Anjum H N",
         "Ms. Umme Sadiya",
       ],
-      aiml: ["Sushma M V", "Akitha S"],
+      aiml: [
+        "Select the Faculty","Sushma M V", "Akitha S"],
       physics: [
+        "Select the Faculty",
         "Dr. M R Rangaraju",
         "Mr. H N Vijayaraghava",
         "Mr. P T Rudre Gowda",
@@ -195,6 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Dr. B C Hemaraju",
       ],
       chemistry: [
+        "Select the Faculty",
         "Mr. K. N. Krishnakumar",
         "Mr. B.C. Ravi",
         "Dr. Pradeep Kumar C B",
@@ -202,6 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Mr. Preetham R",
       ],
       mathematics: [
+        "Select the Faculty",
         "Dr. M.K Partha",
         "T Mohana",
         "Dr. Kalavathi G K",
