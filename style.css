@@ -39,8 +39,9 @@ body {
 .pre {
     position: absolute;
     transform: rotate(-90deg) translateY(-50%);
-    left: -40px;
+    left: -50px;
     top: 50%;
+    letter-spacing: 2px;
 }
 
 .heading h1 {
@@ -427,6 +428,9 @@ body {
 
     .bar12,
     .headerBlock {
+        display: none;
+    }
+    .bar:last-child{
         display: none;
     }
 

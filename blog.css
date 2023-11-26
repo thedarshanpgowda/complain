@@ -250,13 +250,13 @@ pre span{
 
     .line1 {
         height: 350px;
-        left: -50%;
+        left: -60%;
         top: -38%;
     }
 
     .line2 {
         height: 350px;
-        left: -50%;
+        left: -60%;
         bottom: -38%;
     }
 
@@ -330,7 +330,7 @@ pre span{
         grid-column-gap: 35px;
         padding: 35px;
         position: relative;
-        top: -20%;
+        top: 0%;
     }
 
     .blog:nth-child(1) .blogInnerContent2,

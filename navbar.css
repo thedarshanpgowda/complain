@@ -2,7 +2,9 @@
     height: 30px;
     filter: invert(0);
 }
-
+.logos img{
+    filter: invert(1);
+}
 .menubar {
     position: absolute;
     right: 5%;
@@ -349,7 +351,7 @@
     }
 
     .navbarVisible {
-        margin-top: 30%;
+        margin-top: 25%;
     }
 
     .navigationBar {
