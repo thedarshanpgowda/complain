@@ -192,8 +192,6 @@ textarea {
         top: 13%;
     }
 
-   
-
     .menubar {
         display: block;
         cursor: pointer;
@@ -209,6 +207,7 @@ textarea {
         transform: translateX(-50%);
         height: 50vh;
         border: 1px black solid;
+        height: 65vh;
     }
     .visibleContainer {
         margin-top: 0%;

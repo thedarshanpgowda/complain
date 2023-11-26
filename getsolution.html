@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Freely</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Inconsolata:wght@500&family=Patrick+Hand+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="message.css">
+</head>
+
+<body>
+    <div class="primary_body_content">
+        <div class="header">
+            <h2>Talk Freely</h2>
+        </div>
+        <div class="main_content">
+            <form action="">
+                <div class="BlockfrName blocks" title="(*Name can be revealed optionally)">
+                    <span class="span">
+                        <span class="item">Name</span><span class="colon">:</span>
+                        
+                    </span>
+
+                    <div class="input"><input type="text" id="Myname"></div>
+                </div>
+
+                <div class="blockforMessage blocks">
+                    <textarea required name="message" id="message" placeholder="Express Your Querry Here"></textarea>
+                </div>
+
+                <div class="blockforCheckBox blocks">
+                    <input type="checkbox" name="agreed" id="agreed" required>
+                    <label for="agreed">I'm Okay to post this querry </label>
+                </div>
+
+                <div class="blockforCheckBox blocks">
+                    <input type="submit" value="submit" title="Please select the checkbox">
+                </div>
+
+            </form>
+        </div>
+        <div class="extra">
+            <div class="extra_content">
+                <div class="main_name">
+                    Your CareTaker
+                </div>
+                <div class="message">
+                    <p class="p1">Dont be afraid to express your emotions</p>
+                    <p class="p2">We completely assure you that your Problem will be solved</p>
+                </div>
+            </div>
+            <div class="extraimg">
+                <img src="extra_image.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="message.js">
+
+    </script>
+</body>
+
+</html>

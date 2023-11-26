@@ -2,6 +2,7 @@
     font-family: header;
     src: url('Fruits\ Delight.otf');
 }
+
 @font-face {
     font-family: Longsile;
     src: url('Longsile.ttf');
@@ -35,6 +36,13 @@ body {
 
 }
 
+.pre {
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    left: -40px;
+    top: 50%;
+}
+
 .heading h1 {
     color: #503a3a;
     -webkit-text-stroke: #503a3f 1px;
@@ -52,7 +60,7 @@ body {
     padding: 0px 50px;
     flex-direction: column;
     background-color: transparent;
-    position: relative;
+    /* position: relative; */
 }
 
 .para {
@@ -74,83 +82,29 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow: auto;
-    width: 644px;
     height: 250px;
     padding: 25px 0px;
-    display: inline-flex;
-    scroll-snap-type: x mandatory;
 }
-.bar2{
-    display: inline;
+
+.bar2 {
+    display: flex;
 }
-.callToAction::-webkit-scrollbar{
+
+.callToAction::-webkit-scrollbar {
     display: none;
 }
-.contentForCenter{
+
+.contentForCenter {
     align-self: flex-start;
     display: flex;
     align-items: center;
     margin: -30px auto 0px auto;
 }
-.testimonalsBlock::-webkit-scrollbar{
+
+.testimonalsBlock::-webkit-scrollbar {
     display: none;
 }
-.barBlock{
-    padding: 20px;
-    height: 295px;
-    /* margin-left: 20px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bar {
-    background-color: #fff;
-    margin: 0px 10px;
-    width: 275px;
-    background: rgba(255, 255, 255, 0.55);
-    -webkit-backdrop-filter: blur(19px);
-    backdrop-filter: blur(19px);
-    scroll-snap-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.275);
-    box-shadow:
-        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-        100px 100px 80px rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-shrink: 0;
-    object-position: center;
-    height: 200px;
-}
 
-.bar2 {
-    background-color: aliceblue;
-}
-
-.bar2 img {
-    height: 70px;
-}
-
-.testimonalsBlock {
-    text-align: center;
-    border: 0.2px black solid;
-    border-radius: 20px;
-}
-
-.bar1,
-.bar3 {
-    width: 250px;
-    height: 200px;
-}
 
 
 .servicesMainPage {
@@ -164,10 +118,12 @@ body {
 .heading h1 {
     text-align: center;
 }
-.headerBlock{
+
+.headerBlock {
     font-family: Longsile;
 
 }
+
 .servicesContainer {
     display: flex;
     justify-content: center;
@@ -259,7 +215,7 @@ body {
 .quoteContainer {
     width: 98vw;
     margin: 20px 5px;
-    
+
 }
 
 
@@ -372,7 +328,7 @@ body {
     padding: 20px;
     background-color: #f2d4de;
     border-radius: 20px;
-    width: 20%;
+    width: 27%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -414,15 +370,16 @@ body {
         height: 320px;
     }
 
-    .bar{
-        scroll-snap-align:center ;
+    .bar {
+        scroll-snap-align: center;
         /* margin-left: 5px; */
     }
+
     .callToAction::-webkit-scrollbar {
         display: none;
     }
 
-  
+
 
 }
 
@@ -441,7 +398,7 @@ body {
         margin-bottom: 0px;
 
     }
-    
+
     .servicesContainer {
         padding: 25px;
     }
@@ -467,9 +424,9 @@ body {
 
 @media only screen and (max-width: 500px) {
 
-   
+
     .bar12,
-    .headerBlock{
+    .headerBlock {
         display: none;
     }
 

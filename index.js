@@ -23,10 +23,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const bar = document.querySelectorAll('.bar');
-  const currentBar = bar.querySelector('.bar2');
-  
+  function checkScreenWidth() {
+    var screenWidth =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
 
+    if (screenWidth < 500) {
+      // console.log("Screen width is less than 500 pixels!");
+      const cancelAnytime = document.querySelector(".cancelAnytime");
+      const dropdown = document.querySelector(".dropdown");
+      const review = document.querySelector(".review ");
+      cancelAnytime.addEventListener("click", () => {
+        dropdown.style.display = "none";
+      });
+      review.addEventListener("mouseover", () => {
+        dropdown.style.display = "flex";
+      });
+    }
+  }
 
-  
+  window.addEventListener("resize", checkScreenWidth);
+  checkScreenWidth();
 });
