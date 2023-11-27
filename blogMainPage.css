@@ -294,7 +294,9 @@ input:focus {
     height: 40px;
     cursor: pointer;
 }
-
+.SubmitMain{
+    cursor: pointer;
+}
 .personComment {
     display: flex;
     justify-content: space-between;
@@ -305,7 +307,7 @@ input:focus {
 }
 
 .innerComment {
-    width: 80%;
+    /* width: 80%; */
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -316,7 +318,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 35%;
+    width: 50%;
     margin-top: 20px;
 }
 
@@ -341,6 +343,7 @@ input:focus {
 .likes {
     position: relative;
     cursor: pointer;
+    margin: 0px 10px;
 }
 
 .likeAfter {
@@ -353,6 +356,13 @@ input:focus {
     display: inline;
 }
 
+.likesCount {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    justify-content: space-between;
+}
+
 .mainContentComment {
     display: flex;
 }
@@ -363,8 +373,44 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
-.person2{
+
+.secondaryCommentvisible {
+    display: flex;
+}
+
+.person2 {
     margin: 50px 50px 50px 130px;
+}
+
+.newblockforreply {
+    width: 80%;
+    position: relative;
+    display: flex;
+    margin: 50px auto 0px;
+}
+
+.personComments {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+}
+
+.innerAccessoriesReply {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.actuallikescount {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 10px;
+    
 }
