@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage != NULL) {
+    const k = localStorage.getItem("Mymessage");
+  } else {
+    k = ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+        delectus? A asperiores cum quam similique ipsam molestias
+        eligendi, molestiae quasi commodi veritatis veniam debitis
+        incidunt sequi suscipit neque tenetur vero atque quo quaerat
+        ducimus! Voluptate totam laboriosam aliquam, in quam, minus,
+        quibusdam commodi excepturi quaerat neque quod incidunt at
+        aliquid?`;
+  }
+
   function changes() {
     document.addEventListener("click", (e) => {
       console.log(e.target);
@@ -10,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         appendMessage(e, message);
         e.target
           .closest(".secondaryComment")
-          .querySelector('input[type="text"]') = " ";
+          .querySelector('input[type="text"]').defaultValue = "";
       }
       if (e.target.classList.contains("SubmitMain")) {
         const formContainer = e.target
@@ -34,16 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const likeAfter = document.querySelectorAll(".likeAfter");
     const likeBefore = document.querySelectorAll(".likeBefore");
     const likesCount = document.querySelectorAll(".likesCount p");
-
     const reply = document.querySelectorAll(".reply a");
     const secondaryComment = document.querySelectorAll(".secondaryComment");
     const person = document.querySelector(".person");
+    const comment = document.querySelector(".comment");
+    comment.innerHTML = k;
 
     function mainmessage(e) {
       console.log(formContainer);
     }
 
     function appendMessage(e, message) {
+      if (e.target.classList.contains("Submit")) {
+        console.log("de;ter");
+        const k = e.target.closest(".secondaryContentComment");
+        k.style.display = "none";
+      }
       const newdiv = document.createElement("div");
       newdiv.classList.add("newblockforreply");
       newdiv.innerHTML = `
@@ -74,11 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                 </div>
             </div>`;
-    //   const reply = e.target.closest(".secondaryContentComment");
-    //   reply.style.display = "none";
+      //   const reply = e.target.closest(".secondaryContentComment");
+      //   reply.style.display = "none";
       const person = e.target.closest(".person");
       person.appendChild(newdiv);
-
+      localStorage.setItem("Mymessage", `${message}`);
     }
 
     function replyblock(event) {
