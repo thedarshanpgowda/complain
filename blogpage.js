@@ -1,21 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   var arr = [];
       for(var i = 0; i< 100; i++){
-        arr.push(i);
+        arr.push(`message${i}`);
       }
-      
-  let k;
-  if (localStorage != null) {
-    k = localStorage.getItem('message')
-  } else {
-    k = ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-        delectus? A asperiores cum quam similique ipsam molestias
-        eligendi, molestiae quasi commodi veritatis veniam debitis
-        incidunt sequi suscipit neque tenetur vero atque quo quaerat
-        ducimus! Voluptate totam laboriosam aliquam, in quam, minus,
-        quibusdam commodi excepturi quaerat neque quod incidunt at
-        aliquid?`;
-  }
+      // console.log(arr)
+  let z = 0;
+      k = ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+      delectus? A asperiores cum quam similique ipsam molestias
+      eligendi, molestiae quasi commodi veritatis veniam debitis
+      incidunt sequi suscipit neque tenetur vero atque quo quaerat
+      ducimus! Voluptate totam laboriosam aliquam, in quam, minus,
+      quibusdam commodi excepturi quaerat neque quod incidunt at
+      aliquid?`;
+    
 
   function clearMessage(data) {
     // console.log('hello')
@@ -131,11 +128,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const person = e.target.closest(".person");
       person.appendChild(newdiv);
       
-      if (localStorage == null) {
-        localStorage.setItem(arr[0], `${message}`);
-      } else {
-        localStorage.setItem(arr[i++],message);
-      }
+        localStorage.setItem(`${arr[z]}`, message);
+        z+=1;
+        console.log(z)
     }
 
     function replyblock(event) {
@@ -176,4 +171,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("MutationObserver", changes);
   changes();
+
+
 });
