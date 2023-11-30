@@ -393,7 +393,7 @@ textarea:focus {
 
     .primaryBox img {
         height: 50px;
-        align-self: flex-end;
+        align-self: center;
     }
 
     .actualCommentBlock {
