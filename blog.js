@@ -6,49 +6,48 @@ document.addEventListener("DOMContentLoaded", () => {
     messageArray.push(`message${i}`);
   }
 
-  function createBlock(Myname, message){
-    if(Myname==""){
-        Myname = 'Anonymous';
+  function createBlock(Myname, message) {
+    if (Myname == "") {
+      Myname = "Anonymous";
     }
-    const blockForActualComment = document.createElement('div');
-    blockForActualComment.className = 'blockForActualComment';
+    const blockForActualComment = document.createElement("div");
+    blockForActualComment.className = "blockForActualComment";
 
-    const nameForComment = document.createElement('div');
-    nameForComment.className = 'nameForComment';
+    const nameForComment = document.createElement("div");
+    nameForComment.className = "nameForComment";
     nameForComment.innerHTML = Myname;
 
-    const actualComment = document.createElement('div');
-    actualComment.className = 'actualComment';
+    const actualComment = document.createElement("div");
+    actualComment.className = "actualComment";
     actualComment.innerHTML = message;
-    actualComment.style.width = '125%';
+    actualComment.style.width = "125%";
 
+    const accessories = document.createElement("div");
+    accessories.className = "accessories";
 
-    const accessories = document.createElement('div');
-    accessories.className = 'accessories';
+    const likesCount = document.createElement("div");
+    likesCount.className = "likesCount";
 
-    const likesCount = document.createElement('div');
-    likesCount.className = 'likesCount';
+    const likes = document.createElement("div");
+    likes.className = "likes";
 
-    const likes = document.createElement('div');
-    likes.className = 'likes';
+    const likeBefore = document.createElement("img");
+    likeBefore.className = "likeBefore";
+    likeBefore.src = "https://cdn-icons-png.flaticon.com/128/1077/1077035.png";
+    likeBefore.alt = "likes";
 
-    const likeBefore = document.createElement('img');
-    likeBefore.className = 'likeBefore';
-    likeBefore.src = 'https://cdn-icons-png.flaticon.com/128/1077/1077035.png';
-    likeBefore.alt = 'likes'
-    
-    const likeAfter = document.createElement('img');
-    likeAfter.className = 'likeAfter';
-    likeAfter.src = 'https://cdn-icons-png.flaticon.com/128/833/833472.png';
-    likeAfter.alt = 'likes'
+    const likeAfter = document.createElement("img");
+    likeAfter.className = "likeAfter";
+    likeAfter.src = "https://cdn-icons-png.flaticon.com/128/833/833472.png";
+    likeAfter.alt = "likes";
 
-    const likesC = document.createElement('div');
-    likesC.className = 'likesC';
-    likesC.innerHTML = '0';
+    const likesC = document.createElement("div");
+    likesC.className = "likesC";
+    likesC.innerHTML = "0";
 
     likes.appendChild(likeBefore);
     likes.appendChild(likeAfter);
-   
+
     likesCount.appendChild(likes);
     likesCount.appendChild(likesC);
 
@@ -60,68 +59,101 @@ document.addEventListener("DOMContentLoaded", () => {
     return blockForActualComment;
   }
 
+  function appendMainMessage(name, message) {
+    const newBlock = createBlock(name, message);
 
-  function appendMainMessage(event, name ,message){
-    const newBlock = createBlock(name,message);
-
-    const commentPrimaryBlock = document.createElement('div');
-    commentPrimaryBlock.className = 'commentPrimaryBlock';
+    const commentPrimaryBlock = document.createElement("div");
+    commentPrimaryBlock.className = "commentPrimaryBlock";
     commentPrimaryBlock.appendChild(newBlock);
 
-    const reply = document.createElement('div');
-    reply.className = 'replyBlock';
+    const reply = document.createElement("div");
+    reply.className = "replyBlock";
     commentPrimaryBlock.appendChild(reply);
 
-    const blockForComment = document.createElement('div');
-    blockForComment.className = 'blockForComment';
+    const blockForComment = document.createElement("div");
+    blockForComment.className = "blockForComment";
     blockForComment.appendChild(commentPrimaryBlock);
 
-    const anchor = document.createElement('a');
-    anchor.className = 'reply';
-    anchor.href = '#';
-    anchor.textContent = 'Reply'
+    const anchor = document.createElement("a");
+    anchor.className = "reply";
+    anchor.href = "#";
+    anchor.textContent = "Reply";
 
-    
     blockForComment.appendChild(commentPrimaryBlock);
-    const anch = blockForComment.querySelector('.accessories');
+    const anch = blockForComment.querySelector(".accessories");
     anch.appendChild(anchor);
 
-    const testimonals = document.querySelector('.testimonals');
-    const block = event.target.closest('.mainprimaryBox').nextElementSibling;
+    const testimonals = document.querySelector(".testimonals");
+    const block = document.querySelector(".mainprimaryBox").nextElementSibling;
 
-    commentPrimaryBlock.querySelector('.actualComment').style.width = '100%';
-    commentPrimaryBlock.style.padding = '0% 4%';
-    
+    commentPrimaryBlock.querySelector(".actualComment").style.width = "100%";
+    commentPrimaryBlock.style.padding = "0% 4%";
+
     testimonals.insertBefore(blockForComment, block);
-
   }
 
-
   function appendMessage(event, Myname, message) {
-    console.log(Myname , message)
-    const blockForActualComment = createBlock(Myname,message)
-    const replyBlock = event.target.closest('.replyBlock');
+    // console.log(Myname, message);
+    const blockForActualComment = createBlock(Myname, message);
+    const replyBlock = event.target.closest(".replyBlock");
     replyBlock.appendChild(blockForActualComment);
   }
 
-  function SubmitCommentfunc(event){
-    const name = event.target.closest('.mainprimaryBox').querySelector('.maininputName');
-    const message = event.target.closest('.mainprimaryBox').querySelector('.maininputClass');
+  function SubmitCommentfunc(event) {
+    const name = event.target
+      .closest(".mainprimaryBox")
+      .querySelector(".maininputName");
+    const message = event.target
+      .closest(".mainprimaryBox")
+      .querySelector(".maininputClass");
     appendMainMessage(event, name.value, message.value);
-    
-    const input = event.target.closest('.mainprimaryBox').querySelector('.maininputName');
-    const textarea = event.target.closest('.mainprimaryBox').querySelector('textarea');
+
+    //**********************************************local storage
+
+    const obj = {
+      messageText: `${message.value}`,
+      nameText: `${name.value}`,
+    };
+    // console.log(`message${message_index}`);
+    localStorage.setItem(`message${message_index}`, JSON.stringify(obj));
+
+    // console.log(message_index);
+    message_index += 1;
+    // console.log(message_index);
+
+    ////////////////////////////////////////////////////////
+
+    const input = event.target
+      .closest(".mainprimaryBox")
+      .querySelector(".maininputName");
+    const textarea = event.target
+      .closest(".mainprimaryBox")
+      .querySelector("textarea");
     input.value = "";
     textarea.value = "";
-
-
-
   }
 
   function SubmitMainfunc(event) {
-    const message = event.target.closest(".replyBlock").querySelector(".inputClass");
-    const name = event.target.closest(".replyBlock").querySelector(".inputClassName");
-    appendMessage(event, name.value ,message.value);
+    const message = event.target
+      .closest(".replyBlock")
+      .querySelector(".inputClass");
+    const name = event.target
+      .closest(".replyBlock")
+      .querySelector(".inputClassName");
+
+    //**********************************************local storage
+
+    const obj = {
+      messageText: `${message.value}`,
+      nameText: `${name.value}`,
+    };
+    // console.log(`message${message_index}`);
+    localStorage.setItem(`message${message_index}`, JSON.stringify(obj));
+    message_index += 1;
+
+    ////////////////////////////////////////////////////////
+
+    appendMessage(event, name.value, message.value);
     const primaryBox = event.target.closest(".primaryBox");
     primaryBox.style.display = "none";
   }
@@ -149,13 +181,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function replyBlock(event) {
-    const reply = event.target.closest(".blockForActualComment").nextElementSibling;
-
+    const reply = event.target.closest(
+      ".blockForActualComment"
+    ).nextElementSibling;
 
     const newBlock = document.createElement("div");
     newBlock.classList.add("primaryBox");
-    
-    
+
     const newBlockForInput = document.createElement("div");
     newBlockForInput.classList.add("primaryBoxForInput");
 
@@ -188,8 +220,29 @@ document.addEventListener("DOMContentLoaded", () => {
     reply.appendChild(newBlock);
   }
 
+  //****************************************local storage */
+  function getElementsFromLocal() {
+    if (localStorage == null) {
+        console.log('helllo')
+        return;
+    } else {
+        console.log('helllo')
+        for (var i = 0; i < localStorage.length; i++) {
+        const val = localStorage.getItem(`message${i}`);
+        let msg = JSON.parse(val);
+        console.log(msg.nameText, msg.messageText)
+        const dataBlock = appendMainMessage(msg.nameText, msg.messageText);
+
+      }
+    }
+  }
+
+  if (localStorage != null) {
+    getElementsFromLocal();
+  }
+
   document.addEventListener("click", (event) => {
-    console.log(event.target);
+    // console.log(event.target);
     if (event.target.classList.contains("likeBefore")) {
       updateLikes(event);
     }
@@ -208,8 +261,5 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       SubmitCommentfunc(event);
     }
-
-
-
   });
 });
