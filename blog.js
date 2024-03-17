@@ -61,11 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function appendMainMessage(name, message) {
     const newBlock = createBlock(name, message);
-
     const commentPrimaryBlock = document.createElement("div");
     commentPrimaryBlock.className = "commentPrimaryBlock";
     commentPrimaryBlock.appendChild(newBlock);
-
     const reply = document.createElement("div");
     reply.className = "replyBlock";
     commentPrimaryBlock.appendChild(reply);
@@ -92,12 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
     testimonals.insertBefore(blockForComment, block);
   }
 
-  function appendMessage(event, Myname, message) {
+  function appendMessage( Myname, message) {
     // console.log(Myname, message);
     const blockForActualComment = createBlock(Myname, message);
-    const replyBlock = event.target.closest(".replyBlock");
+    const replyBlock = document.querySelector(".replyBlock");
     replyBlock.appendChild(blockForActualComment);
   }
+
 
   function SubmitCommentfunc(event) {
     const name = event.target
@@ -106,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const message = event.target
       .closest(".mainprimaryBox")
       .querySelector(".maininputClass");
-    appendMainMessage(event, name.value, message.value);
+    appendMainMessage( name.value, message.value);
 
     //**********************************************local storage
 
@@ -153,9 +152,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ////////////////////////////////////////////////////////
 
-    appendMessage(event, name.value, message.value);
-    const primaryBox = event.target.closest(".primaryBox");
-    primaryBox.style.display = "none";
+    appendMessage( name.value, message.value);
+    const primaryBox = document.querySelector(".primaryBox");
+    name.style.display = "none";
   }
 
   function updateLikes(event) {
@@ -223,16 +222,15 @@ document.addEventListener("DOMContentLoaded", () => {
   //****************************************local storage */
   function getElementsFromLocal() {
     if (localStorage == null) {
-        console.log('helllo')
-        return;
+      console.log("helllo");
+      return;
     } else {
-        console.log('helllo')
-        for (var i = 0; i < localStorage.length; i++) {
+      console.log("helllo");
+      for (var i = 0; i < localStorage.length; i++) {
         const val = localStorage.getItem(`message${i}`);
         let msg = JSON.parse(val);
-        console.log(msg.nameText, msg.messageText)
+        console.log(msg.nameText, msg.messageText);
         const dataBlock = appendMainMessage(msg.nameText, msg.messageText);
-
       }
     }
   }
@@ -242,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.addEventListener("click", (event) => {
-    // console.log(event.target);
+    console.log(event.target);
     if (event.target.classList.contains("likeBefore")) {
       updateLikes(event);
     }
