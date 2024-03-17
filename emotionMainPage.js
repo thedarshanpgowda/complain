@@ -88,29 +88,30 @@ document.addEventListener("DOMContentLoaded", () => {
     SignupPage.style.display = "flex";
   });
 
-  const myPassword = document.querySelector('input[type="password"]');
-  const myEmail = document.querySelector('input[type="email"]');
+  const myPassword = document.querySelector("#myPasswords");
+  const myEmail = document.querySelector("#myEmails");
   const submit = document.getElementById("submit");
+
   submit.addEventListener("click", (event) => {
     event.preventDefault();
+    console.log(myEmail.value);
+    console.log(myPassword.value);
     if (
       myEmail.value == "sdarshanpgowda2003@gmail.com" &&
-      myPassword.value == "8431676017"
+      myPassword.value == "8431000017"
     ) {
       window.location =
         "https://thedarshanpgowda.github.io/complain/emotionalTracker.html";
-        return;
+      return;
     }
     if (
       myEmail.value == "mithungowdahc12a@gmail.com" &&
-      myPassword.value == "8431676017"
+      myPassword == "8431000017"
     ) {
       window.location =
         "https://thedarshanpgowda.github.io/complain/teachersDashBOard.html";
-        return;
-
-    }
-    else {
+      return;
+    } else {
       SignupPage.style.display = "flex";
       Signupcontent = SignupPage.querySelector(".login");
       Signupcontent.innerHTML =
