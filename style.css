@@ -95,11 +95,36 @@ body {
     display: none;
 }
 
+.studentblock,
+.teacherBlock {
+    padding: 10px;
+    margin: 10px;
+}
+
+.convo {
+    padding: 15px;
+    color: black;
+}
+
 .contentForCenter {
     align-self: flex-start;
     display: flex;
     align-items: center;
     margin: -30px auto 0px auto;
+    width: 100%;
+}
+
+.heading{
+    margin-top: 12%;
+}
+
+.callToActionBlock {
+    display: flex;
+    height: 150px;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonalsBlock::-webkit-scrollbar {
@@ -430,7 +455,8 @@ body {
     .headerBlock {
         display: none;
     }
-    .bar:last-child{
+
+    .bar:last-child {
         display: none;
     }
 
@@ -494,6 +520,10 @@ body {
 
     .workBlock {
         height: 125px;
+    }
+    .callToActionBlock {
+        flex-direction: column;
+        margin-top: 100px;
     }
 
 }
